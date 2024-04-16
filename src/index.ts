@@ -3,6 +3,8 @@ import type { ClientType } from "./Types/ClientType";
 import type { CustomFieldType } from "./Types/CustomFieldType";
 import type { EntityType } from "./Types/EntityType";
 import type { EstimateType } from "./Types/EstimateType";
+import type { ExpenseType, ExpenseDetailType } from "./Types/ExpenseType";
+import type { ExpenseCategoryType } from "./Types/ExpenseCategoryType";
 import type { MembershipType } from "./Types/MembershipType";
 import type { MemberType } from "./Types/MemberType";
 import type { NewClientType } from "./Types/NewClientType";
@@ -16,6 +18,8 @@ import type { TagType } from "./Types/TagType";
 import type { TaskType } from "./Types/TaskType";
 import type { TimeEntryType } from "./Types/TimeEntryType";
 import type { UpdateClientType } from "./Types/UpdateClientType";
+import type { UpdateExpenseType } from "./Types/UpdateExpenseType";
+import type { UpdateExpenseCategoryType } from "./Types/UpdateExpenseCategoryType";
 import type { UpdateProjectType } from "./Types/UpdateProjectType";
 import type { UserGroupType } from "./Types/UserGroupType";
 import type { UserType } from "./Types/UserType";
@@ -25,6 +29,8 @@ import type { RequestSummaryReportType } from "./Types/RequestSummaryReportType"
 
 import ClientsQuery from "./Queries/ClientsQuery";
 import CustomFieldsQuery from "./Queries/CustomFieldsQuery";
+import ExpenseQuery from "./Queries/ExpenseQuery";
+import ExpenseCategoryQuery from "./Queries/ExpenseCategoryQuery";
 import ProjectsQuery from "./Queries/ProjectsQuery";
 import {Query} from "./Queries/Query";
 import TagsQuery from "./Queries/TagsQuery";
@@ -32,6 +38,8 @@ import TasksQuery from "./Queries/TasksQuery";
 import TimeEntriesQuery from "./Queries/TimeEntriesQuery";
 import TimeEntryQuery from "./Queries/TimeEntryQuery";
 import UpdateClientQuery from "./Queries/UpdateClientQuery";
+import UpdateExpenseQuery from "./Queries/UpdateExpenseQuery";
+import UpdateExpenseCategoryQuery from "./Queries/UpdateExpenseCategoryQuery";
 import UpdateProjectQuery from "./Queries/UpdateProjectQuery";
 import UserGroupQuery from "./Queries/UserGroupQuery";
 import UsersQuery from "./Queries/UsersQuery";
@@ -96,6 +104,9 @@ export {
   CustomFieldType,
   EntityType,
   EstimateType,
+  ExpenseType,
+  ExpenseDetailType,
+  ExpenseCategoryType,
   MembershipType,
   MemberType,
   NewClientType,
@@ -109,6 +120,8 @@ export {
   TaskType,
   TimeEntryType,
   UpdateClientType,
+  UpdateExpenseType,
+  UpdateExpenseCategoryType,
   UpdateProjectType,
   UserGroupType,
   UserType,
@@ -118,6 +131,8 @@ export {
 
   ClientsQuery,
   CustomFieldsQuery,
+  ExpenseQuery,
+  ExpenseCategoryQuery,
   ProjectsQuery,
   Query,
   TagsQuery,
@@ -125,6 +140,8 @@ export {
   TimeEntriesQuery,
   TimeEntryQuery,
   UpdateClientQuery,
+  UpdateExpenseQuery,
+  UpdateExpenseCategoryQuery,
   UpdateProjectQuery,
   UserGroupQuery,
   UsersQuery,
