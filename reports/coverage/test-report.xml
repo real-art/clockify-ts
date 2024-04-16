@@ -1,50 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-    <file path="C:\Users\joel\Documents\Git\clockify.js\tests\timeEntry.test.ts">
-        <testCase name="Get your time entries on workspace" duration="222"/>
-        <testCase name="Get a specific time entry on workspace" duration="90"/>
-        <testCase name="Add a new time entry to workspace &amp;&amp; Delete time entry from workspace" duration="386"/>
-        <testCase name="Add a new time entry for another user on workspace &amp;&amp; Delete time entry from workspace" duration="423"/>
-        <testCase name="Stop currently running timer on workspace" duration="2312"/>
-        <testCase name="Update time entry on workspace" duration="275"/>
-    </file>
-    <file path="C:\Users\joel\Documents\Git\clockify.js\tests\project.test.ts">
-        <testCase name="Get all projects on workspace" duration="92"/>
-        <testCase name="Find project by ID" duration="93"/>
-        <testCase name="Add a new project to workspace &amp;&amp; Update project on workspace &amp;&amp; Delete project from workspace" duration="625"/>
-        <testCase name="Update project estimate - Time Estimate" duration="284"/>
+    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/project.test.ts">
+        <testCase name="Get all projects on workspace" duration="519">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Find project by ID" duration="119">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Add a new project to workspace &amp;&amp; Update project on workspace &amp;&amp; Delete project from workspace" duration="123">
+            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Update project estimate - Time Estimate" duration="124">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
         <testCase name="Update project estimate - Budget Estimate" duration="0"/>
-        <testCase name="Update project memberships" duration="126"/>
+        <testCase name="Update project memberships" duration="122">
+            <failure message="Error: Response Error[PATCH:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[PATCH:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:72:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
         <testCase name="Update project template" duration="0"/>
     </file>
-    <file path="C:\Users\joel\Documents\Git\clockify.js\tests\task.test.ts">
-        <testCase name="Find tasks on project" duration="98"/>
-        <testCase name="Find task on project by ID" duration="1115"/>
-        <testCase name="Add a new task on project &amp;&amp; Delete task from project" duration="399"/>
-        <testCase name="Update task on project" duration="277"/>
+    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/timeEntry.test.ts">
+        <testCase name="Get your time entries on workspace" duration="117">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Get a specific time entry on workspace" duration="119">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Add a new time entry to workspace &amp;&amp; Delete time entry from workspace" duration="119">
+            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Add a new time entry for another user on workspace &amp;&amp; Delete time entry from workspace" duration="124">
+            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Stop currently running timer on workspace" duration="124">
+            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Update time entry on workspace" duration="119">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
     </file>
-    <file path="C:\Users\joel\Documents\Git\clockify.js\tests\client.test.ts">
-        <testCase name="Find clients on workspace" duration="85"/>
-        <testCase name="Add a new client to workspace &amp; Delete client" duration="407"/>
-        <testCase name="Update a clients name" duration="177"/>
+    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/task.test.ts">
+        <testCase name="Find tasks on project" duration="118">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Find task on project by ID" duration="116">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Add a new task on project &amp;&amp; Delete task from project" duration="120">
+            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Update task on project" duration="119">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
     </file>
-    <file path="C:\Users\joel\Documents\Git\clockify.js\tests\tags.test.ts">
-        <testCase name="Find tags on workspace" duration="91"/>
-        <testCase name="Add a new tag to workspace &amp;&amp; Delete tag" duration="358"/>
-        <testCase name="Update tag" duration="89"/>
+    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/client.test.ts">
+        <testCase name="Find clients on workspace" duration="116">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Add a new client to workspace &amp; Delete client" duration="115">
+            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Update a clients name" duration="116">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
     </file>
-    <file path="C:\Users\joel\Documents\Git\clockify.js\tests\reports.test.ts">
-        <testCase name="Summary report" duration="186"/>
-        <testCase name="Detailed report" duration="79"/>
+    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/reports.test.ts">
+        <testCase name="Summary report" duration="485">
+            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: Unauthorized. Resource: undefined"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: Unauthorized. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Detailed report" duration="116">
+            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: Unauthorized. Resource: undefined"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: Unauthorized. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
     </file>
-    <file path="C:\Users\joel\Documents\Git\clockify.js\tests\workspaces.test.ts">
-        <testCase name="Get all my workspaces" duration="241"/>
+    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/tags.test.ts">
+        <testCase name="Find tags on workspace" duration="119">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Add a new tag to workspace &amp;&amp; Delete tag" duration="116">
+            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Update tag" duration="118">
+            <failure message="Error: Response Error[PUT:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[PUT:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:66:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
     </file>
-    <file path="C:\Users\joel\Documents\Git\clockify.js\tests\users.test.ts">
-        <testCase name="Get currently logged in user&apos;s info" duration="86"/>
-        <testCase name="Find all users on workspace" duration="85"/>
+    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/users.test.ts">
+        <testCase name="Get currently logged in user&apos;s info" duration="116">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Find all users on workspace" duration="118">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
         <testCase name="Add user to workspace" duration="0"/>
         <testCase name="Update user&apos;s workspace status" duration="0"/>
         <testCase name="Remove user from workspace" duration="0"/>
+    </file>
+    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/workspaces.test.ts">
+        <testCase name="Get all my workspaces" duration="116">
+            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: Api key does not exist. Resource: undefined
+    at new ClockifyError (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:27:5)
+    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
     </file>
 </testExecutions>

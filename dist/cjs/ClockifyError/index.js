@@ -19,22 +19,20 @@ var http_status_codes_1 = require("http-status-codes");
 var ClockifyError = (function (_super) {
     __extends(ClockifyError, _super);
     function ClockifyError(error) {
-        var _a;
-        var _this = this;
+        var _a, _b;
         var message;
-        var requestMethod = (_a = error.config.method) === null || _a === void 0 ? void 0 : _a.toUpperCase();
+        var requestMethod = (_b = (_a = error.config) === null || _a === void 0 ? void 0 : _a.method) === null || _b === void 0 ? void 0 : _b.toUpperCase();
         if (error.response) {
             var statusCode = error.response.status;
-            message = "Response Error[" + requestMethod + ":" + statusCode + "]: " + http_status_codes_1.getReasonPhrase(statusCode) + ". Message: " + error.response.data.message + ". Resource: " + error.response.data.path;
+            message = "Response Error[".concat(requestMethod, ":").concat(statusCode, "]: ").concat((0, http_status_codes_1.getReasonPhrase)(statusCode), ". Message: ").concat(error.response.data, ". Resource: ").concat(error.response.data);
         }
         else if (error.request) {
-            message = "Response Error[" + requestMethod + "]: " + JSON.stringify(error.request);
+            message = "Response Error[".concat(requestMethod, "]: ").concat(JSON.stringify(error.request));
         }
         else {
-            message = "Error: " + error.message;
+            message = "Error: ".concat(error.message);
         }
-        _this = _super.call(this, message) || this;
-        return _this;
+        return _super.call(this, message) || this;
     }
     return ClockifyError;
 }(Error));

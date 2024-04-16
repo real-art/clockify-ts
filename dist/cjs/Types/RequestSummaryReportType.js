@@ -11,83 +11,83 @@ var RequestSummaryReportGroupsEnum;
     RequestSummaryReportGroupsEnum["user"] = "USER";
     RequestSummaryReportGroupsEnum["userGroup"] = "USER_GROUP";
     RequestSummaryReportGroupsEnum["timeEntry"] = "TIMEENTRY";
-})(RequestSummaryReportGroupsEnum = exports.RequestSummaryReportGroupsEnum || (exports.RequestSummaryReportGroupsEnum = {}));
+})(RequestSummaryReportGroupsEnum || (exports.RequestSummaryReportGroupsEnum = RequestSummaryReportGroupsEnum = {}));
 var RequestSummaryReportSortOrderEnum;
 (function (RequestSummaryReportSortOrderEnum) {
     RequestSummaryReportSortOrderEnum["ascneding"] = "ASCENDING";
     RequestSummaryReportSortOrderEnum["descending"] = "DESCENDING";
-})(RequestSummaryReportSortOrderEnum = exports.RequestSummaryReportSortOrderEnum || (exports.RequestSummaryReportSortOrderEnum = {}));
+})(RequestSummaryReportSortOrderEnum || (exports.RequestSummaryReportSortOrderEnum = RequestSummaryReportSortOrderEnum = {}));
 var RequestSummaryReportInvoicingStateEnum;
 (function (RequestSummaryReportInvoicingStateEnum) {
     RequestSummaryReportInvoicingStateEnum["invoiced"] = "INVOICED";
     RequestSummaryReportInvoicingStateEnum["uninvoiced"] = "UNINVOICED";
     RequestSummaryReportInvoicingStateEnum["all"] = "ALL";
-})(RequestSummaryReportInvoicingStateEnum = exports.RequestSummaryReportInvoicingStateEnum || (exports.RequestSummaryReportInvoicingStateEnum = {}));
+})(RequestSummaryReportInvoicingStateEnum || (exports.RequestSummaryReportInvoicingStateEnum = RequestSummaryReportInvoicingStateEnum = {}));
 var RequestSummaryReportApprovalStateEnum;
 (function (RequestSummaryReportApprovalStateEnum) {
     RequestSummaryReportApprovalStateEnum["approved"] = "APPROVED";
     RequestSummaryReportApprovalStateEnum["unapproved"] = "UNAPPROVED";
     RequestSummaryReportApprovalStateEnum["all"] = "ALL";
-})(RequestSummaryReportApprovalStateEnum = exports.RequestSummaryReportApprovalStateEnum || (exports.RequestSummaryReportApprovalStateEnum = {}));
+})(RequestSummaryReportApprovalStateEnum || (exports.RequestSummaryReportApprovalStateEnum = RequestSummaryReportApprovalStateEnum = {}));
 var RequestSummaryReportSortColumnEnum;
 (function (RequestSummaryReportSortColumnEnum) {
     RequestSummaryReportSortColumnEnum["group"] = "GROUP";
     RequestSummaryReportSortColumnEnum["duration"] = "DURATION";
     RequestSummaryReportSortColumnEnum["amount"] = "AMOUNT";
-})(RequestSummaryReportSortColumnEnum = exports.RequestSummaryReportSortColumnEnum || (exports.RequestSummaryReportSortColumnEnum = {}));
+})(RequestSummaryReportSortColumnEnum || (exports.RequestSummaryReportSortColumnEnum = RequestSummaryReportSortColumnEnum = {}));
 var RequestSummaryReportAmountShownEnum;
 (function (RequestSummaryReportAmountShownEnum) {
     RequestSummaryReportAmountShownEnum["hideAmount"] = "HIDE_AMOUNT";
     RequestSummaryReportAmountShownEnum["earned"] = "EARNED";
     RequestSummaryReportAmountShownEnum["cost"] = "COST";
     RequestSummaryReportAmountShownEnum["profit"] = "PROFIT";
-})(RequestSummaryReportAmountShownEnum = exports.RequestSummaryReportAmountShownEnum || (exports.RequestSummaryReportAmountShownEnum = {}));
+})(RequestSummaryReportAmountShownEnum || (exports.RequestSummaryReportAmountShownEnum = RequestSummaryReportAmountShownEnum = {}));
 var RequestSummaryReportExportTypeEnum;
 (function (RequestSummaryReportExportTypeEnum) {
     RequestSummaryReportExportTypeEnum["json"] = "JSON";
     RequestSummaryReportExportTypeEnum["csv"] = "CSV";
     RequestSummaryReportExportTypeEnum["xlsx"] = "XLSX";
     RequestSummaryReportExportTypeEnum["pdf"] = "PDF";
-})(RequestSummaryReportExportTypeEnum = exports.RequestSummaryReportExportTypeEnum || (exports.RequestSummaryReportExportTypeEnum = {}));
+})(RequestSummaryReportExportTypeEnum || (exports.RequestSummaryReportExportTypeEnum = RequestSummaryReportExportTypeEnum = {}));
 var RequestSummaryReportContainsFilterEnum;
 (function (RequestSummaryReportContainsFilterEnum) {
     RequestSummaryReportContainsFilterEnum["contains"] = "CONTAINS";
     RequestSummaryReportContainsFilterEnum["doesNotContain"] = "DOES_NOT_CONTAIN";
-})(RequestSummaryReportContainsFilterEnum = exports.RequestSummaryReportContainsFilterEnum || (exports.RequestSummaryReportContainsFilterEnum = {}));
+})(RequestSummaryReportContainsFilterEnum || (exports.RequestSummaryReportContainsFilterEnum = RequestSummaryReportContainsFilterEnum = {}));
 var RequestSummaryReportContainedInTimeEntryFilterEnum;
 (function (RequestSummaryReportContainedInTimeEntryFilterEnum) {
     RequestSummaryReportContainedInTimeEntryFilterEnum["contains"] = "CONTAINS";
     RequestSummaryReportContainedInTimeEntryFilterEnum["constainsOnly"] = "CONTAINS_ONLY";
     RequestSummaryReportContainedInTimeEntryFilterEnum["doesNotContain"] = "DOES_NOT_CONTAIN";
-})(RequestSummaryReportContainedInTimeEntryFilterEnum = exports.RequestSummaryReportContainedInTimeEntryFilterEnum || (exports.RequestSummaryReportContainedInTimeEntryFilterEnum = {}));
+})(RequestSummaryReportContainedInTimeEntryFilterEnum || (exports.RequestSummaryReportContainedInTimeEntryFilterEnum = RequestSummaryReportContainedInTimeEntryFilterEnum = {}));
 var RequestSummaryReportProjectStatusFilterEnum;
 (function (RequestSummaryReportProjectStatusFilterEnum) {
     RequestSummaryReportProjectStatusFilterEnum["all"] = "ALL";
     RequestSummaryReportProjectStatusFilterEnum["active"] = "ACTIVE";
     RequestSummaryReportProjectStatusFilterEnum["archived"] = "ARCHIVED";
-})(RequestSummaryReportProjectStatusFilterEnum = exports.RequestSummaryReportProjectStatusFilterEnum || (exports.RequestSummaryReportProjectStatusFilterEnum = {}));
+})(RequestSummaryReportProjectStatusFilterEnum || (exports.RequestSummaryReportProjectStatusFilterEnum = RequestSummaryReportProjectStatusFilterEnum = {}));
 var RequestSummaryReportClientStatusFilterEnum;
 (function (RequestSummaryReportClientStatusFilterEnum) {
     RequestSummaryReportClientStatusFilterEnum["all"] = "ALL";
     RequestSummaryReportClientStatusFilterEnum["active"] = "ACTIVE";
     RequestSummaryReportClientStatusFilterEnum["archived"] = "ARCHIVED";
-})(RequestSummaryReportClientStatusFilterEnum = exports.RequestSummaryReportClientStatusFilterEnum || (exports.RequestSummaryReportClientStatusFilterEnum = {}));
+})(RequestSummaryReportClientStatusFilterEnum || (exports.RequestSummaryReportClientStatusFilterEnum = RequestSummaryReportClientStatusFilterEnum = {}));
 var RequestSummaryReportTagStatusFilterEnum;
 (function (RequestSummaryReportTagStatusFilterEnum) {
     RequestSummaryReportTagStatusFilterEnum["all"] = "ALL";
     RequestSummaryReportTagStatusFilterEnum["active"] = "ACTIVE";
     RequestSummaryReportTagStatusFilterEnum["archived"] = "ARCHIVED";
-})(RequestSummaryReportTagStatusFilterEnum = exports.RequestSummaryReportTagStatusFilterEnum || (exports.RequestSummaryReportTagStatusFilterEnum = {}));
+})(RequestSummaryReportTagStatusFilterEnum || (exports.RequestSummaryReportTagStatusFilterEnum = RequestSummaryReportTagStatusFilterEnum = {}));
 var RequestSummaryReportUserStatusFilterEnum;
 (function (RequestSummaryReportUserStatusFilterEnum) {
     RequestSummaryReportUserStatusFilterEnum["all"] = "ALL";
     RequestSummaryReportUserStatusFilterEnum["active"] = "ACTIVE";
     RequestSummaryReportUserStatusFilterEnum["inactive"] = "INACTIVE";
-})(RequestSummaryReportUserStatusFilterEnum = exports.RequestSummaryReportUserStatusFilterEnum || (exports.RequestSummaryReportUserStatusFilterEnum = {}));
+})(RequestSummaryReportUserStatusFilterEnum || (exports.RequestSummaryReportUserStatusFilterEnum = RequestSummaryReportUserStatusFilterEnum = {}));
 var RequestSummaryReportTaskStatusFilterEnum;
 (function (RequestSummaryReportTaskStatusFilterEnum) {
     RequestSummaryReportTaskStatusFilterEnum["all"] = "ALL";
     RequestSummaryReportTaskStatusFilterEnum["active"] = "ACTIVE";
     RequestSummaryReportTaskStatusFilterEnum["done"] = "DONE";
-})(RequestSummaryReportTaskStatusFilterEnum = exports.RequestSummaryReportTaskStatusFilterEnum || (exports.RequestSummaryReportTaskStatusFilterEnum = {}));
+})(RequestSummaryReportTaskStatusFilterEnum || (exports.RequestSummaryReportTaskStatusFilterEnum = RequestSummaryReportTaskStatusFilterEnum = {}));
 //# sourceMappingURL=RequestSummaryReportType.js.map

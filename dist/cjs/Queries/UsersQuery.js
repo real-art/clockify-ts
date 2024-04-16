@@ -7,12 +7,12 @@ var UserQueryMembershipsEnum;
     UserQueryMembershipsEnum["project"] = "PROJECT";
     UserQueryMembershipsEnum["usergroup"] = "USERGROUP";
     UserQueryMembershipsEnum["all"] = "ALL";
-})(UserQueryMembershipsEnum = exports.UserQueryMembershipsEnum || (exports.UserQueryMembershipsEnum = {}));
+})(UserQueryMembershipsEnum || (exports.UserQueryMembershipsEnum = UserQueryMembershipsEnum = {}));
 var UserQueryStatusEnum;
 (function (UserQueryStatusEnum) {
     UserQueryStatusEnum["pending"] = "PENDING";
     UserQueryStatusEnum["active"] = "ACTIVE";
     UserQueryStatusEnum["declined"] = "DECLINED";
     UserQueryStatusEnum["inactive"] = "INACTIVE";
-})(UserQueryStatusEnum = exports.UserQueryStatusEnum || (exports.UserQueryStatusEnum = {}));
+})(UserQueryStatusEnum || (exports.UserQueryStatusEnum = UserQueryStatusEnum = {}));
 //# sourceMappingURL=UsersQuery.js.map

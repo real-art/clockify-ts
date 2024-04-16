@@ -22,6 +22,8 @@ import CustomFields from "./CustomFields";
 import TimeEntries from "./TimeEntries";
 import UserGroups from "./UserGroups";
 import Reports from "./Reports";
+import Expenses from "./Expenses";
+import ExpenseCategories from "./ExpenseCategories";
 var Workspace = (function (_super) {
     __extends(Workspace, _super);
     function Workspace(apiKey, workspaceId) {
@@ -30,7 +32,7 @@ var Workspace = (function (_super) {
         return _this;
     }
     Workspace.prototype.resourceSubPath = function () {
-        return "/workspaces/" + this.workspaceId;
+        return "/workspaces/".concat(this.workspaceId);
     };
     Object.defineProperty(Workspace.prototype, "clients", {
         get: function () {
@@ -84,6 +86,20 @@ var Workspace = (function (_super) {
     Object.defineProperty(Workspace.prototype, "reports", {
         get: function () {
             return new Reports(this._apiKey, this.workspaceId);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Workspace.prototype, "expenses", {
+        get: function () {
+            return new Expenses(this._apiKey, this.workspaceId);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Workspace.prototype, "expenseCategories", {
+        get: function () {
+            return new ExpenseCategories(this._apiKey, this.workspaceId);
         },
         enumerable: false,
         configurable: true

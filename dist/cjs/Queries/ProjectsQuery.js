@@ -5,10 +5,10 @@ var ProjectsQueryClientStatusEnum;
 (function (ProjectsQueryClientStatusEnum) {
     ProjectsQueryClientStatusEnum["active"] = "ACTIVE";
     ProjectsQueryClientStatusEnum["archived"] = "ARCHIVED";
-})(ProjectsQueryClientStatusEnum = exports.ProjectsQueryClientStatusEnum || (exports.ProjectsQueryClientStatusEnum = {}));
+})(ProjectsQueryClientStatusEnum || (exports.ProjectsQueryClientStatusEnum = ProjectsQueryClientStatusEnum = {}));
 var ProjectsQueryUserStatusEnum;
 (function (ProjectsQueryUserStatusEnum) {
     ProjectsQueryUserStatusEnum["active"] = "ACTIVE";
     ProjectsQueryUserStatusEnum["inactive"] = "INACTIVE";
-})(ProjectsQueryUserStatusEnum = exports.ProjectsQueryUserStatusEnum || (exports.ProjectsQueryUserStatusEnum = {}));
+})(ProjectsQueryUserStatusEnum || (exports.ProjectsQueryUserStatusEnum = ProjectsQueryUserStatusEnum = {}));
 //# sourceMappingURL=ProjectsQuery.js.map

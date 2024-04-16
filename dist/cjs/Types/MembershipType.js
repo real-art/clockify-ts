@@ -7,12 +7,12 @@ var MembershipStatusEnum;
     MembershipStatusEnum["active"] = "ACTIVE";
     MembershipStatusEnum["declined"] = "DECLINED";
     MembershipStatusEnum["inactive"] = "INACTIVE";
-})(MembershipStatusEnum = exports.MembershipStatusEnum || (exports.MembershipStatusEnum = {}));
+})(MembershipStatusEnum || (exports.MembershipStatusEnum = MembershipStatusEnum = {}));
 var MembershipTypeEnum;
 (function (MembershipTypeEnum) {
     MembershipTypeEnum["workspace"] = "WORKSPACE";
     MembershipTypeEnum["project"] = "PROJECT";
     MembershipTypeEnum["usergroup"] = "USERGROUP";
     MembershipTypeEnum["all"] = "ALL";
-})(MembershipTypeEnum = exports.MembershipTypeEnum || (exports.MembershipTypeEnum = {}));
+})(MembershipTypeEnum || (exports.MembershipTypeEnum = MembershipTypeEnum = {}));
 //# sourceMappingURL=MembershipType.js.map

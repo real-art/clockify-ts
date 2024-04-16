@@ -5,18 +5,18 @@ var TimeEstimateTypeEnum;
 (function (TimeEstimateTypeEnum) {
     TimeEstimateTypeEnum["manual"] = "MANUAL";
     TimeEstimateTypeEnum["auto"] = "AUTO";
-})(TimeEstimateTypeEnum = exports.TimeEstimateTypeEnum || (exports.TimeEstimateTypeEnum = {}));
+})(TimeEstimateTypeEnum || (exports.TimeEstimateTypeEnum = TimeEstimateTypeEnum = {}));
 var BudgetEstimateTypeEnum;
 (function (BudgetEstimateTypeEnum) {
     BudgetEstimateTypeEnum["manual"] = "MANUAL";
     BudgetEstimateTypeEnum["auto"] = "AUTO";
-})(BudgetEstimateTypeEnum = exports.BudgetEstimateTypeEnum || (exports.BudgetEstimateTypeEnum = {}));
+})(BudgetEstimateTypeEnum || (exports.BudgetEstimateTypeEnum = BudgetEstimateTypeEnum = {}));
 var TimeEstimateResetOptionEnum;
 (function (TimeEstimateResetOptionEnum) {
     TimeEstimateResetOptionEnum["monthly"] = "MONTHLY";
-})(TimeEstimateResetOptionEnum = exports.TimeEstimateResetOptionEnum || (exports.TimeEstimateResetOptionEnum = {}));
+})(TimeEstimateResetOptionEnum || (exports.TimeEstimateResetOptionEnum = TimeEstimateResetOptionEnum = {}));
 var BudgetEstimateResetOptionEnum;
 (function (BudgetEstimateResetOptionEnum) {
     BudgetEstimateResetOptionEnum["monthly"] = "MONTHLY";
-})(BudgetEstimateResetOptionEnum = exports.BudgetEstimateResetOptionEnum || (exports.BudgetEstimateResetOptionEnum = {}));
+})(BudgetEstimateResetOptionEnum || (exports.BudgetEstimateResetOptionEnum = BudgetEstimateResetOptionEnum = {}));
 //# sourceMappingURL=EstimateType.js.map

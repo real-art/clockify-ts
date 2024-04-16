@@ -9,17 +9,17 @@ var CustomFieldTypeEnum;
     CustomFieldTypeEnum["dropdownMultiple"] = "DROPDOWN_MULTIPLE";
     CustomFieldTypeEnum["checkbox"] = "CHECKBOX";
     CustomFieldTypeEnum["link"] = "LINK";
-})(CustomFieldTypeEnum = exports.CustomFieldTypeEnum || (exports.CustomFieldTypeEnum = {}));
+})(CustomFieldTypeEnum || (exports.CustomFieldTypeEnum = CustomFieldTypeEnum = {}));
 var CustomFieldStatusEnum;
 (function (CustomFieldStatusEnum) {
     CustomFieldStatusEnum["inactive"] = "INACTIVE";
     CustomFieldStatusEnum["visible"] = "VISBLE";
     CustomFieldStatusEnum["invisible"] = "INVISIBLE";
-})(CustomFieldStatusEnum = exports.CustomFieldStatusEnum || (exports.CustomFieldStatusEnum = {}));
+})(CustomFieldStatusEnum || (exports.CustomFieldStatusEnum = CustomFieldStatusEnum = {}));
 var CustomFieldProjectDefaultValuesStatusEnum;
 (function (CustomFieldProjectDefaultValuesStatusEnum) {
     CustomFieldProjectDefaultValuesStatusEnum["inactive"] = "INACTIVE";
     CustomFieldProjectDefaultValuesStatusEnum["visible"] = "VISBLE";
     CustomFieldProjectDefaultValuesStatusEnum["invisible"] = "INVISIBLE";
-})(CustomFieldProjectDefaultValuesStatusEnum = exports.CustomFieldProjectDefaultValuesStatusEnum || (exports.CustomFieldProjectDefaultValuesStatusEnum = {}));
+})(CustomFieldProjectDefaultValuesStatusEnum || (exports.CustomFieldProjectDefaultValuesStatusEnum = CustomFieldProjectDefaultValuesStatusEnum = {}));
 //# sourceMappingURL=CustomFieldType.js.map

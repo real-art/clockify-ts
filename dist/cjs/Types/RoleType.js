@@ -7,5 +7,5 @@ var RoleEnum;
     RoleEnum["teamManager"] = "TEAM_MANAGER";
     RoleEnum["user"] = "USER";
     RoleEnum["administrator"] = "ADMINISTRATOR";
-})(RoleEnum = exports.RoleEnum || (exports.RoleEnum = {}));
+})(RoleEnum || (exports.RoleEnum = RoleEnum = {}));
 //# sourceMappingURL=RoleType.js.map

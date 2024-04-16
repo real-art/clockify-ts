@@ -7,7 +7,8 @@ import CustomFields from "./CustomFields";
 import TimeEntries from "./TimeEntries";
 import UserGroups from "./UserGroups";
 import Reports from "./Reports";
-
+import Expenses from "./Expenses";
+import ExpenseCategories from "./ExpenseCategories";
 
 export default class Workspace extends ClockifyAPI {
 
@@ -52,5 +53,13 @@ export default class Workspace extends ClockifyAPI {
 
   get reports(): Reports {
     return new Reports(this._apiKey, this.workspaceId);
+  }
+
+  get expenses(): Expenses {
+    return new Expenses(this._apiKey, this.workspaceId);
+  }
+
+  get expenseCategories(): ExpenseCategories {
+    return new ExpenseCategories(this._apiKey, this.workspaceId);
   }
 }
