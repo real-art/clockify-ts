@@ -43,6 +43,14 @@ type ProjectType = {
     "resetOption": null | BudgetEstimateResetOptionEnum,
     "active": boolean,
   } | null,
+  "customFields":
+    {
+      "customFieldId": string,
+      "customFieldName": string,
+      "customFieldType": string,
+      "userId": string,
+      "value": string,
+    }[],
 }
 export {
   ProjectType,

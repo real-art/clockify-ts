@@ -49,6 +49,14 @@ type UserType = {
     "weeklyUpdates": boolean,
   },
   "status": UserStatusEnum,
+  "customFields":
+    {
+      "customFieldId": string,
+      "customFieldName": string,
+      "customFieldType": string,
+      "userId": string,
+      "value": string,
+    }[],
 }
 export {
   UserType,
