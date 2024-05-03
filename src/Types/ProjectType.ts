@@ -5,6 +5,7 @@ import {
   TimeEstimateResetOptionEnum,
   TimeEstimateTypeEnum
 } from "./EstimateType";
+import {ClientType} from "./ClientType";
 
 type ProjectType = {
   "id": string,
@@ -26,7 +27,8 @@ type ProjectType = {
   "color": string,
   "archived": boolean,
   "duration": string,
-  "clientName": string,
+  "client": ClientType | undefined,
+  "clientName": string | undefined,
   "note": string,
   "template": boolean,
   "public": boolean,
