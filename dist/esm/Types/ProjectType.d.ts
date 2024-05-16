@@ -42,6 +42,20 @@ type ProjectType = {
         "resetOption": null | BudgetEstimateResetOptionEnum;
         "active": boolean;
     } | null;
+    "expenses": Array<{
+        id: string;
+        workspaceId: string;
+        userId: string;
+        date: string;
+        projectId: string;
+        categoryId: string;
+        notes: string;
+        quantity: number;
+        billable: boolean;
+        fileId: string;
+        total: number;
+        locked: boolean;
+    }>;
     "customFields": {
         "customFieldId": string;
         "customFieldName": string;

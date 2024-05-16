@@ -16,6 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 import Summary from "./Summary";
 import ClockifyAPI from "../../../../Api/ClockifyApi";
 import Detailed from "./Detailed";
+import Expenses from "./Expenses";
 var Reports = (function (_super) {
     __extends(Reports, _super);
     function Reports(apiKey, workspaceId) {
@@ -33,6 +34,13 @@ var Reports = (function (_super) {
     Object.defineProperty(Reports.prototype, "detailed", {
         get: function () {
             return new Detailed(this._apiKey, this.workspaceId);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Reports.prototype, "expenses", {
+        get: function () {
+            return new Expenses(this._apiKey, this.workspaceId);
         },
         enumerable: false,
         configurable: true
