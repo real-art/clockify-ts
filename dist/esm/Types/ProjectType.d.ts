@@ -3,7 +3,10 @@ import { BudgetEstimateResetOptionEnum, BudgetEstimateTypeEnum, TimeEstimateRese
 type ProjectType = {
     "id": string;
     "name": string;
-    "hourlyRate": null | number;
+    "hourlyRate": null | {
+        amount: number;
+        currency: string;
+    };
     "clientId": string;
     "workspaceId": string;
     "billable": boolean;

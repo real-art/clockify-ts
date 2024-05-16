@@ -146,7 +146,7 @@ test("Update project memberships", async () => {
       {
         userId: testUserId,
         hourlyRate: {
-          amount
+          amount,
         }
       }
     ]
