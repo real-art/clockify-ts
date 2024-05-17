@@ -34,6 +34,9 @@ var Client = (function (_super) {
         if (query === void 0) { query = {}; }
         return this.axiosPut(data, query);
     };
+    Client.prototype.get = function () {
+        return this.axiosGet({});
+    };
     Client.prototype.delete = function () {
         return this.axiosDelete({});
     };
