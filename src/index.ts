@@ -1,6 +1,7 @@
 import Clockify from "./Clockify";
 import type { ClientType } from "./Types/ClientType";
 import type { CustomFieldType } from "./Types/CustomFieldType";
+import type { DetailedReportType, DetailedReportTimeEntryType } from "./Types/DetailedReportType";
 import type { EntityType } from "./Types/EntityType";
 import type { EstimateType } from "./Types/EstimateType";
 import type { ExpenseType, ExpenseDetailType } from "./Types/ExpenseType";
@@ -102,6 +103,8 @@ export default Clockify;
 export {
   ClientType,
   CustomFieldType,
+  DetailedReportType,
+  DetailedReportTimeEntryType,
   EntityType,
   EstimateType,
   ExpenseType,
