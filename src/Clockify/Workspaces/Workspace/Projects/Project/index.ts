@@ -7,6 +7,7 @@ import Tasks from "./Tasks";
 import Template from "./Template";
 import type { UpdateProjectType } from "../../../../../Types/UpdateProjectType";
 import UpdateProjectQuery from "../../../../../Queries/UpdateProjectQuery";
+import ProjectQuery from "../../../../../Queries/ProjectQuery";
 
 export default class Project extends ClockifyAPI implements IGettable<ProjectType>, IPuttable<ProjectType>, IDeletable<ProjectType> {
 
@@ -47,8 +48,8 @@ export default class Project extends ClockifyAPI implements IGettable<ProjectTyp
    * Get all projects on workspace
    * Find project by ID
    */
-  get(): Promise<ProjectType> {
-    return this.axiosGet<ProjectType>({});
+  get(query: ProjectQuery = {}): Promise<ProjectType> {
+    return this.axiosGet<ProjectType>(query);
   }
 
   /**

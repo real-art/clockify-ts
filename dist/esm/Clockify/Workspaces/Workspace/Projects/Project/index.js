@@ -65,8 +65,9 @@ var Project = (function (_super) {
         enumerable: false,
         configurable: true
     });
-    Project.prototype.get = function () {
-        return this.axiosGet({});
+    Project.prototype.get = function (query) {
+        if (query === void 0) { query = {}; }
+        return this.axiosGet(query);
     };
     Project.prototype.put = function (data, query) {
         if (query === void 0) { query = {}; }

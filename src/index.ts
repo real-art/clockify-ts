@@ -33,6 +33,7 @@ import CustomFieldsQuery from "./Queries/CustomFieldsQuery";
 import ExpenseQuery from "./Queries/ExpenseQuery";
 import ExpenseCategoryQuery from "./Queries/ExpenseCategoryQuery";
 import ProjectsQuery from "./Queries/ProjectsQuery";
+import ProjectQuery from "./Queries/ProjectQuery";
 import {Query} from "./Queries/Query";
 import TagsQuery from "./Queries/TagsQuery";
 import TasksQuery from "./Queries/TasksQuery";
