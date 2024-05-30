@@ -1,7 +1,7 @@
 import type {MembershipStatusEnum, MembershipTypeEnum} from "./MembershipType";
 import {
   BudgetEstimateResetOptionEnum,
-  BudgetEstimateTypeEnum,
+  BudgetEstimateTypeEnum, EstimateTypeEnum,
   TimeEstimateResetOptionEnum,
   TimeEstimateTypeEnum
 } from "./EstimateType";
@@ -33,6 +33,11 @@ type ProjectType = {
   "template": boolean,
   "public": boolean,
   "costRate": null | number,
+  "estimate":
+    {
+      estimate: string,
+      type: EstimateTypeEnum
+    },
   "timeEstimate": {
     "estimate": string,
     "type": TimeEstimateTypeEnum,

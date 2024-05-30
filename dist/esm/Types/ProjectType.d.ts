@@ -1,5 +1,5 @@
 import type { MembershipStatusEnum, MembershipTypeEnum } from "./MembershipType";
-import { BudgetEstimateResetOptionEnum, BudgetEstimateTypeEnum, TimeEstimateResetOptionEnum, TimeEstimateTypeEnum } from "./EstimateType";
+import { BudgetEstimateResetOptionEnum, BudgetEstimateTypeEnum, EstimateTypeEnum, TimeEstimateResetOptionEnum, TimeEstimateTypeEnum } from "./EstimateType";
 import { ClientType } from "./ClientType";
 type ProjectType = {
     "id": string;
@@ -30,6 +30,10 @@ type ProjectType = {
     "template": boolean;
     "public": boolean;
     "costRate": null | number;
+    "estimate": {
+        estimate: string;
+        type: EstimateTypeEnum;
+    };
     "timeEstimate": {
         "estimate": string;
         "type": TimeEstimateTypeEnum;

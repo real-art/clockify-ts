@@ -1,3 +1,7 @@
+export declare enum EstimateTypeEnum {
+    manual = "MANUAL",
+    auto = "AUTO"
+}
 export declare enum TimeEstimateTypeEnum {
     manual = "MANUAL",
     auto = "AUTO"

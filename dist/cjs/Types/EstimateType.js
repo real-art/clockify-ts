@@ -1,6 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.BudgetEstimateResetOptionEnum = exports.TimeEstimateResetOptionEnum = exports.BudgetEstimateTypeEnum = exports.TimeEstimateTypeEnum = void 0;
+exports.BudgetEstimateResetOptionEnum = exports.TimeEstimateResetOptionEnum = exports.BudgetEstimateTypeEnum = exports.TimeEstimateTypeEnum = exports.EstimateTypeEnum = void 0;
+var EstimateTypeEnum;
+(function (EstimateTypeEnum) {
+    EstimateTypeEnum["manual"] = "MANUAL";
+    EstimateTypeEnum["auto"] = "AUTO";
+})(EstimateTypeEnum || (exports.EstimateTypeEnum = EstimateTypeEnum = {}));
 var TimeEstimateTypeEnum;
 (function (TimeEstimateTypeEnum) {
     TimeEstimateTypeEnum["manual"] = "MANUAL";
