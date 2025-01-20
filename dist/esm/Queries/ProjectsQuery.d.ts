@@ -8,6 +8,10 @@ export declare enum ProjectsQueryUserStatusEnum {
     active = "ACTIVE",
     inactive = "INACTIVE"
 }
+export declare enum ProjectsQueryAccessEnum {
+    PUBLIC = "PUBLIC",
+    PRIVATE = "PRIVATE"
+}
 export default interface ProjectsQuery extends Query, MultiItemsQuery {
     archived?: boolean;
     name?: string;
@@ -19,4 +23,8 @@ export default interface ProjectsQuery extends Query, MultiItemsQuery {
     "contains-users"?: boolean;
     "user-status"?: ProjectsQueryUserStatusEnum;
     "is-template"?: boolean;
+    "hydrated"?: boolean;
+    access?: ProjectsQueryAccessEnum;
+    "expense-limit"?: number;
+    "expense-date"?: string;
 }
