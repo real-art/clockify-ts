@@ -1,179 +1,295 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/project.test.ts">
-        <testCase name="Get all projects on workspace" duration="587">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    <file path="/home/runner/work/clockify-ts/clockify-ts/tests/project.test.ts">
+        <testCase name="Get all projects on workspace" duration="74">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Find project by ID" duration="128">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+        <testCase name="Find project by ID" duration="5">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Add a new project to workspace &amp;&amp; Update project on workspace &amp;&amp; Delete project from workspace" duration="135">
-            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+        <testCase name="Add a new project to workspace &amp;&amp; Update project on workspace &amp;&amp; Delete project from workspace" duration="7">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:60:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Update project estimate - Time Estimate" duration="132">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+        <testCase name="Update project estimate - Time Estimate" duration="4">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
         <testCase name="Update project estimate - Budget Estimate" duration="0"/>
-        <testCase name="Update project memberships" duration="128">
-            <failure message="Error: Response Error[PATCH:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[PATCH:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:72:29
+        <testCase name="Update project memberships" duration="4">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:72:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
         <testCase name="Update project template" duration="0"/>
     </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/timeEntry.test.ts">
-        <testCase name="Get your time entries on workspace" duration="154">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    <file path="/home/runner/work/clockify-ts/clockify-ts/tests/timeEntry.test.ts">
+        <testCase name="Get your time entries on workspace" duration="137">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Get a specific time entry on workspace" duration="129">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+        <testCase name="Get a specific time entry on workspace" duration="6">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Add a new time entry to workspace &amp;&amp; Delete time entry from workspace" duration="128">
-            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+        <testCase name="Add a new time entry to workspace &amp;&amp; Delete time entry from workspace" duration="4">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:60:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Add a new time entry for another user on workspace &amp;&amp; Delete time entry from workspace" duration="132">
-            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+        <testCase name="Add a new time entry for another user on workspace &amp;&amp; Delete time entry from workspace" duration="4">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:60:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Stop currently running timer on workspace" duration="126">
-            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+        <testCase name="Stop currently running timer on workspace" duration="4">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:60:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Update time entry on workspace" duration="127">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-        </testCase>
-    </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/task.test.ts">
-        <testCase name="Find tasks on project" duration="149">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-        </testCase>
-        <testCase name="Find task on project by ID" duration="125">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-        </testCase>
-        <testCase name="Add a new task on project &amp;&amp; Delete task from project" duration="129">
-            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-        </testCase>
-        <testCase name="Update task on project" duration="131">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-        </testCase>
-    </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/client.test.ts">
-        <testCase name="Find clients on workspace" duration="156">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-        </testCase>
-        <testCase name="Add a new client to workspace &amp; Delete client" duration="129">
-            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-        </testCase>
-        <testCase name="Update a clients name" duration="126">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+        <testCase name="Update time entry on workspace" duration="3">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
     </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/reports.test.ts">
-        <testCase name="Summary report" duration="592">
-            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+    <file path="/home/runner/work/clockify-ts/clockify-ts/tests/task.test.ts">
+        <testCase name="Find tasks on project" duration="59">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Detailed report" duration="123">
-            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+        <testCase name="Find task on project by ID" duration="11">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Add a new task on project &amp;&amp; Delete task from project" duration="10">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Update task on project" duration="3">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
     </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/tags.test.ts">
-        <testCase name="Find tags on workspace" duration="147">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    <file path="/home/runner/work/clockify-ts/clockify-ts/tests/client.test.ts">
+        <testCase name="Find clients on workspace" duration="55">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Add a new tag to workspace &amp;&amp; Delete tag" duration="126">
-            <failure message="Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[POST:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:60:29
+        <testCase name="Add a new client to workspace &amp; Delete client" duration="5">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:60:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Update tag" duration="236">
-            <failure message="Error: Response Error[PUT:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[PUT:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:66:29
+        <testCase name="Update a clients name" duration="3">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
     </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/users.test.ts">
-        <testCase name="Get currently logged in user&apos;s info" duration="150">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    <file path="/home/runner/work/clockify-ts/clockify-ts/tests/reports.test.ts">
+        <testCase name="Summary report" duration="55">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:60:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
-        <testCase name="Find all users on workspace" duration="123">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+        <testCase name="Detailed report" duration="5">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+    </file>
+    <file path="/home/runner/work/clockify-ts/clockify-ts/tests/tags.test.ts">
+        <testCase name="Find tags on workspace" duration="67">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Add a new tag to workspace &amp;&amp; Delete tag" duration="5">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Update tag" duration="4">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:66:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+    </file>
+    <file path="/home/runner/work/clockify-ts/clockify-ts/tests/users.test.ts">
+        <testCase name="Get currently logged in user&apos;s info" duration="56">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+        <testCase name="Find all users on workspace" duration="5">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
         <testCase name="Add user to workspace" duration="0"/>
         <testCase name="Update user&apos;s workspace status" duration="0"/>
         <testCase name="Remove user from workspace" duration="0"/>
     </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/workspaces.test.ts">
-        <testCase name="Get all my workspaces" duration="149">
-            <failure message="Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]"><![CDATA[Error: Response Error[GET:401]: Unauthorized. Message: [object Object]. Resource: [object Object]
-    at new call (/Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/ClockifyError/index.ts:28:10)
-    at /Users/pat.murray/Documents/GitHub/clockify-ts-ra/src/Api/ClockifyApi/index.ts:54:29
+    <file path="/home/runner/work/clockify-ts/clockify-ts/tests/expenseReports.test.ts">
+        <testCase name="Expense report" duration="57">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:60:29
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+        </testCase>
+    </file>
+    <file path="/home/runner/work/clockify-ts/clockify-ts/tests/workspaces.test.ts">
+        <testCase name="Get all my workspaces" duration="56">
+            <failure message="TypeError: Converting circular structure to JSON"><![CDATA[TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at new stringify (/home/runner/work/clockify-ts/clockify-ts/src/ClockifyError/index.ts:23:59)
+    at /home/runner/work/clockify-ts/clockify-ts/src/Api/ClockifyApi/index.ts:54:29
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
         </testCase>
     </file>
