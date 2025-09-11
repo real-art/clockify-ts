@@ -17,6 +17,8 @@ import Summary from "./Summary";
 import ClockifyAPI from "../../../../Api/ClockifyApi";
 import Detailed from "./Detailed";
 import Expenses from "./Expenses";
+import Weekly from "./Weekly";
+import Shared from "./Shared";
 var Reports = (function (_super) {
     __extends(Reports, _super);
     function Reports(apiKey, workspaceId) {
@@ -34,6 +36,20 @@ var Reports = (function (_super) {
     Object.defineProperty(Reports.prototype, "detailed", {
         get: function () {
             return new Detailed(this._apiKey, this.workspaceId);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Reports.prototype, "weekly", {
+        get: function () {
+            return new Weekly(this._apiKey, this.workspaceId);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Reports.prototype, "shared", {
+        get: function () {
+            return new Shared(this._apiKey, this.workspaceId);
         },
         enumerable: false,
         configurable: true

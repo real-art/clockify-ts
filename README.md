@@ -89,7 +89,7 @@ The following clockify API features are already well implemented and tested.
 - Task :heavy_check_mark:
 - Time Entry :heavy_check_mark:
 - User :heavy_check_mark:
-- Group: :x:
+- User Groups :heavy_check_mark:
 - Workspace :heavy_check_mark:
 - Custom Fields :heavy_check_mark:
 
@@ -97,8 +97,8 @@ The following clockify API features are already well implemented and tested.
 
 - Detailed Reports: :heavy_check_mark:
 - Summary Reports: :heavy_check_mark:
-- Weekly Reports: :x:
-- Shared Reports: :x:
+- Weekly Reports: :heavy_check_mark:
+- Shared Reports: :heavy_check_mark:
 
 # Examples / Documentation
 
@@ -446,6 +446,44 @@ const clockify = new Clockify("clockifyApiKey");
 const removedUser = await clockify.workspace.withId("workspaceId").users.withId("userId").delete();
 ```
 
+## User Groups
+
+### Find user groups on workspace
+
+[API Documentation](https://clockify.me/developers-api#operation--v1-workspaces--workspaceId--user-groups-get)
+
+```typescript
+const clockify = new Clockify("clockifyApiKey");
+const userGroups = await clockify.workspace.withId("workspaceId").userGroups.get({});
+```
+
+### Add a new user group to workspace
+
+[API Documentation](https://clockify.me/developers-api#operation--v1-workspaces--workspaceId--user-groups-post)
+
+```typescript
+const clockify = new Clockify("clockifyApiKey");
+const userGroup = await clockify.workspace.withId("workspaceId").userGroups.post({ name: "Group Name" });
+```
+
+### Update user group
+
+[API Documentation](https://clockify.me/developers-api#operation--v1-workspaces--workspaceId--user-groups--userGroupId--put)
+
+```typescript
+const clockify = new Clockify("clockifyApiKey");
+const updatedUserGroup = await clockify.workspace.withId("workspaceId").userGroups.withId("userGroupId").put({ name: "Updated Name" });
+```
+
+### Delete user group
+
+[API Documentation](https://clockify.me/developers-api#operation--v1-workspaces--workspaceId--user-groups--userGroupId--delete)
+
+```typescript
+const clockify = new Clockify("clockifyApiKey");
+const deletedUserGroup = await clockify.workspace.withId("workspaceId").userGroups.withId("userGroupId").delete();
+```
+
 ## Workspace
 
 ### Get all my workspaces
@@ -490,7 +528,31 @@ const detailedQuery: RequestDetailedReportType = {
     dateRangeEnd: new Date(1609459199000), // Jan. 2021
     detailedFilter: {}
 }
-const report = await clockify.workspaces.withId(testWorkspaceId).reports.detailed.post(detailedQuery);
+### Weekly Report
+
+[API Documentation](https://clockify.me/developers-api#operation--v1-workspaces--workspaceId--reports-weekly-post)
+
+```typescript
+import type { RequestWeeklyReportType } from "clockify-ts";
+const clockify = new Clockify("clockifyApiKey");
+
+const weeklyQuery: RequestWeeklyReportType = {
+    dateRangeStart: new Date(1577836800000), // Jan. 2020
+    dateRangeEnd: new Date(1609459199000), // Jan. 2021
+    summaryFilter: {
+        groups: [RequestWeeklyReportGroupsEnum.project],
+    }
+}
+const report = await clockify.workspaces.withId(testWorkspaceId).reports.weekly.post(weeklyQuery);
+```
+
+### Shared Reports
+
+[API Documentation](https://clockify.me/developers-api#operation--v1-workspaces--workspaceId--reports-shared-get)
+
+```typescript
+const clockify = new Clockify("clockifyApiKey");
+const sharedReports = await clockify.workspaces.withId(testWorkspaceId).reports.shared.get();
 ```
 
 ## Query, Types and Enums
@@ -511,6 +573,7 @@ Here you find an exhaustive list of all Types, Queries and Enums you can import 
 - NewUserType
 - ProjectType
 - RoleType
+- SharedReportType
 - TagType
 - TaskType
 - TimeEntryType
@@ -518,9 +581,11 @@ Here you find an exhaustive list of all Types, Queries and Enums you can import 
 - UpdateProjectType
 - UserGroupType
 - UserType
+- WeeklyReportType
 - WorkspaceType
 - RequestDetailedReportType
 - RequestSummaryReportType
+- RequestWeeklyReportType
 
 ### Available Queries
 - ClientsQuery
@@ -591,6 +656,20 @@ Here you find an exhaustive list of all Types, Queries and Enums you can import 
 - RequestSummaryReportTagStatusFilterEnum
 - RequestSummaryReportUserStatusFilterEnum
 - RequestSummaryReportTaskStatusFilterEnum
+- RequestWeeklyReportGroupsEnum
+- RequestWeeklyReportSortOrderEnum
+- RequestWeeklyReportInvoicingStateEnum
+- RequestWeeklyReportApprovalStateEnum
+- RequestWeeklyReportSortColumnEnum
+- RequestWeeklyReportAmountShownEnum
+- RequestWeeklyReportExportTypeEnum
+- RequestWeeklyReportContainsFilterEnum
+- RequestWeeklyReportContainedInTimeEntryFilterEnum
+- RequestWeeklyReportProjectStatusFilterEnum
+- RequestWeeklyReportClientStatusFilterEnum
+- RequestWeeklyReportTagStatusFilterEnum
+- RequestWeeklyReportUserStatusFilterEnum
+- RequestWeeklyReportTaskStatusFilterEnum
 
 ## Credits
 

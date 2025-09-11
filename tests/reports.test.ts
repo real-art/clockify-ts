@@ -2,7 +2,9 @@ import Clockify from "../src/Clockify";
 import {clockifyApiKey, testProjectId, testWorkspaceId} from "./utils";
 import {
   RequestSummaryReportGroupsEnum,
-  RequestSummaryReportType
+  RequestSummaryReportType,
+  RequestWeeklyReportGroupsEnum,
+  RequestWeeklyReportType
 } from "../src";
 import {RequestDetailedReportType} from "../src";
 
@@ -37,4 +39,27 @@ test("Detailed report", async () => {
   expect(report.totals[0].totalTime).toBeGreaterThanOrEqual(60*60);
   expect(report.timeentries.length).toBeGreaterThanOrEqual(1);
   expect(report.timeentries[0].projectId).toBe(testProjectId);
+})
+
+test("Weekly report", async () => {
+  const weeklyQuery: RequestWeeklyReportType = {
+    dateRangeStart: new Date(1577836800000), // Jan. 2020
+    dateRangeEnd: new Date(1609459199000), // Jan. 2021
+    summaryFilter: {
+      groups: [RequestWeeklyReportGroupsEnum.project],
+    }
+  }
+  const report = await clockify.workspaces.withId(testWorkspaceId).reports.weekly.post(weeklyQuery);
+  expect(report).toBeDefined();
+  console.log(report);
+  expect(report.totals.length).toBeGreaterThanOrEqual(1);
+  expect(report.totals[0].totalTime).toBeGreaterThanOrEqual(60*60);
+  expect(report.groupOne.length).toBeGreaterThanOrEqual(1);
+})
+
+test("Shared reports", async () => {
+  const sharedReports = await clockify.workspaces.withId(testWorkspaceId).reports.shared.get();
+  expect(sharedReports).toBeDefined();
+  console.log(sharedReports);
+  expect(Array.isArray(sharedReports)).toBe(true);
 })

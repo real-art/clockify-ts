@@ -15,6 +15,7 @@ import type { NewTimeEntryType } from "./Types/NewTimeEntryType";
 import type { NewUserType } from "./Types/NewUserType";
 import type { ProjectType } from "./Types/ProjectType";
 import type { RoleType } from "./Types/RoleType";
+import type { SharedReportType } from "./Types/SharedReportType";
 import type { TagType } from "./Types/TagType";
 import type { TaskType } from "./Types/TaskType";
 import type { TimeEntryType } from "./Types/TimeEntryType";
@@ -24,9 +25,11 @@ import type { UpdateExpenseCategoryType } from "./Types/UpdateExpenseCategoryTyp
 import type { UpdateProjectType } from "./Types/UpdateProjectType";
 import type { UserGroupType } from "./Types/UserGroupType";
 import type { UserType } from "./Types/UserType";
+import type { WeeklyReportType } from "./Types/WeeklyReportType";
 import type { WorkspaceType } from "./Types/WorkspaceType";
 import type { RequestDetailedReportType } from "./Types/RequestDetailedReportType";
 import type { RequestSummaryReportType } from "./Types/RequestSummaryReportType";
+import type { RequestWeeklyReportType } from "./Types/RequestWeeklyReportType";
 
 import ClientsQuery from "./Queries/ClientsQuery";
 import CustomFieldsQuery from "./Queries/CustomFieldsQuery";
@@ -80,6 +83,22 @@ import {
   RequestSummaryReportTaskStatusFilterEnum,
 } from "./Types/RequestSummaryReportType";
 import {
+  RequestWeeklyReportGroupsEnum,
+  RequestWeeklyReportSortOrderEnum,
+  RequestWeeklyReportInvoicingStateEnum,
+  RequestWeeklyReportApprovalStateEnum,
+  RequestWeeklyReportSortColumnEnum,
+  RequestWeeklyReportAmountShownEnum,
+  RequestWeeklyReportExportTypeEnum,
+  RequestWeeklyReportContainsFilterEnum,
+  RequestWeeklyReportContainedInTimeEntryFilterEnum,
+  RequestWeeklyReportProjectStatusFilterEnum,
+  RequestWeeklyReportClientStatusFilterEnum,
+  RequestWeeklyReportTagStatusFilterEnum,
+  RequestWeeklyReportUserStatusFilterEnum,
+  RequestWeeklyReportTaskStatusFilterEnum,
+} from "./Types/RequestWeeklyReportType";
+import {
   CustomFieldTypeEnum,
   CustomFieldStatusEnum,
   CustomFieldProjectDefaultValuesStatusEnum,
@@ -120,6 +139,7 @@ export {
   NewUserType,
   ProjectType,
   RoleType,
+  SharedReportType,
   TagType,
   TaskType,
   TimeEntryType,
@@ -129,9 +149,11 @@ export {
   UpdateProjectType,
   UserGroupType,
   UserType,
+  WeeklyReportType,
   WorkspaceType,
   RequestDetailedReportType,
   RequestSummaryReportType,
+  RequestWeeklyReportType,
 
   ClientsQuery,
   CustomFieldsQuery,
@@ -179,6 +201,20 @@ export {
   RequestSummaryReportTagStatusFilterEnum,
   RequestSummaryReportUserStatusFilterEnum,
   RequestSummaryReportTaskStatusFilterEnum,
+  RequestWeeklyReportGroupsEnum,
+  RequestWeeklyReportSortOrderEnum,
+  RequestWeeklyReportInvoicingStateEnum,
+  RequestWeeklyReportApprovalStateEnum,
+  RequestWeeklyReportSortColumnEnum,
+  RequestWeeklyReportAmountShownEnum,
+  RequestWeeklyReportExportTypeEnum,
+  RequestWeeklyReportContainsFilterEnum,
+  RequestWeeklyReportContainedInTimeEntryFilterEnum,
+  RequestWeeklyReportProjectStatusFilterEnum,
+  RequestWeeklyReportClientStatusFilterEnum,
+  RequestWeeklyReportTagStatusFilterEnum,
+  RequestWeeklyReportUserStatusFilterEnum,
+  RequestWeeklyReportTaskStatusFilterEnum,
   CustomFieldTypeEnum,
   CustomFieldStatusEnum,
   CustomFieldProjectDefaultValuesStatusEnum,
