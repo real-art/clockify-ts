@@ -13,33 +13,21 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import ClockifyAPI from "../../../../Api/ClockifyApi";
-import TimeEntry from "./TimeEntry";
-import Approval from "./Approval";
-var TimeEntries = (function (_super) {
-    __extends(TimeEntries, _super);
-    function TimeEntries(apiKey, workspaceId) {
+import ClockifyAPI from "../../../../../Api/ClockifyApi";
+var Approval = (function (_super) {
+    __extends(Approval, _super);
+    function Approval(apiKey, workspaceId) {
         var _this = _super.call(this, apiKey) || this;
         _this.workspaceId = workspaceId;
         return _this;
     }
-    TimeEntries.prototype.resourceSubPath = function () {
-        return "/workspaces/".concat(this.workspaceId, "/time-entries");
+    Approval.prototype.resourceSubPath = function () {
+        return "/workspaces/".concat(this.workspaceId, "/time-entries/approval");
     };
-    TimeEntries.prototype.withId = function (timeEntryId) {
-        return new TimeEntry(this._apiKey, this.workspaceId, timeEntryId);
+    Approval.prototype.patch = function (data) {
+        return this.axiosPatch(data, {});
     };
-    TimeEntries.prototype.post = function (data) {
-        return this.axiosPost(data, {});
-    };
-    Object.defineProperty(TimeEntries.prototype, "approval", {
-        get: function () {
-            return new Approval(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return TimeEntries;
+    return Approval;
 }(ClockifyAPI));
-export default TimeEntries;
+export default Approval;
 //# sourceMappingURL=index.js.map

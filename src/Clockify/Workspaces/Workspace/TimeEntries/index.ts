@@ -1,5 +1,6 @@
 import ClockifyAPI, {IPostable} from "../../../../Api/ClockifyApi";
 import TimeEntry from "./TimeEntry";
+import Approval from "./Approval";
 import type { NewTimeEntryType } from "../../../../Types/NewTimeEntryType";
 import type { TimeEntryType } from "../../../../Types/TimeEntryType";
 
@@ -26,6 +27,10 @@ export default class TimeEntries extends ClockifyAPI implements IPostable<TimeEn
    */
   post(data: NewTimeEntryType): Promise<TimeEntryType> {
     return this.axiosPost<TimeEntryType>(data, {});
+  }
+
+  get approval(): Approval {
+    return new Approval(this._apiKey, this.workspaceId);
   }
 
 }

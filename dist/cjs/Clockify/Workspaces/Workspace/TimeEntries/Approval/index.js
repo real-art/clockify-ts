@@ -18,33 +18,21 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var ClockifyApi_1 = __importDefault(require("../../../../Api/ClockifyApi"));
-var TimeEntry_1 = __importDefault(require("./TimeEntry"));
-var Approval_1 = __importDefault(require("./Approval"));
-var TimeEntries = (function (_super) {
-    __extends(TimeEntries, _super);
-    function TimeEntries(apiKey, workspaceId) {
+var ClockifyApi_1 = __importDefault(require("../../../../../Api/ClockifyApi"));
+var Approval = (function (_super) {
+    __extends(Approval, _super);
+    function Approval(apiKey, workspaceId) {
         var _this = _super.call(this, apiKey) || this;
         _this.workspaceId = workspaceId;
         return _this;
     }
-    TimeEntries.prototype.resourceSubPath = function () {
-        return "/workspaces/".concat(this.workspaceId, "/time-entries");
+    Approval.prototype.resourceSubPath = function () {
+        return "/workspaces/".concat(this.workspaceId, "/time-entries/approval");
     };
-    TimeEntries.prototype.withId = function (timeEntryId) {
-        return new TimeEntry_1.default(this._apiKey, this.workspaceId, timeEntryId);
+    Approval.prototype.patch = function (data) {
+        return this.axiosPatch(data, {});
     };
-    TimeEntries.prototype.post = function (data) {
-        return this.axiosPost(data, {});
-    };
-    Object.defineProperty(TimeEntries.prototype, "approval", {
-        get: function () {
-            return new Approval_1.default(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return TimeEntries;
+    return Approval;
 }(ClockifyApi_1.default));
-exports.default = TimeEntries;
+exports.default = Approval;
 //# sourceMappingURL=index.js.map

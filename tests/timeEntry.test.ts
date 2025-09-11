@@ -134,3 +134,12 @@ test("Update time entry on workspace", async () => {
   const timeEntryAfterReset = await clockify.workspace.withId(testWorkspaceId).timeEntries.withId(testTimeEntryId).put(updatedTimeEntry);
   expect(timeEntryAfterReset.billable).toBeFalsy()
 })
+
+test("Approve time entries", async () => {
+  // Test approval functionality
+  const result = await clockify.workspace.withId(testWorkspaceId).timeEntries.approval.patch({
+    timeEntryIds: [testTimeEntryId],
+    approved: true
+  });
+  expect(result).toBeNull(); // API returns null on success
+})

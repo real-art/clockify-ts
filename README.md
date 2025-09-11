@@ -386,6 +386,23 @@ const clockify = new Clockify("clockifyApiKey");
 const updatedTimeEntry = await clockify.workspace.withId("workspaceId").timeEntries.invoiced.patch(invoiced);
 ```
 
+### Approve or reject time entries
+
+```typescript
+const clockify = new Clockify("clockifyApiKey");
+// Approve time entries
+await clockify.workspace.withId("workspaceId").timeEntries.approval.patch({
+    timeEntryIds: ["timeEntryId1", "timeEntryId2"],
+    approved: true
+});
+
+// Reject time entries  
+await clockify.workspace.withId("workspaceId").timeEntries.approval.patch({
+    timeEntryIds: ["timeEntryId1", "timeEntryId2"], 
+    approved: false
+});
+```
+
 ### Delete time entry from workspace
 
 [API Documentation](https://clockify.me/developers-api#operation--v1-workspaces--workspaceId--time-entries--id--delete)
