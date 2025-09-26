@@ -29,6 +29,8 @@ var UserGroups_1 = __importDefault(require("./UserGroups"));
 var Reports_1 = __importDefault(require("./Reports"));
 var Expenses_1 = __importDefault(require("./Expenses"));
 var ExpenseCategories_1 = __importDefault(require("./ExpenseCategories"));
+var TimeOff_1 = __importDefault(require("./TimeOff"));
+var Holiday_1 = __importDefault(require("./Holiday"));
 var Workspace = (function (_super) {
     __extends(Workspace, _super);
     function Workspace(apiKey, workspaceId) {
@@ -105,6 +107,20 @@ var Workspace = (function (_super) {
     Object.defineProperty(Workspace.prototype, "expenseCategories", {
         get: function () {
             return new ExpenseCategories_1.default(this._apiKey, this.workspaceId);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Workspace.prototype, "timeOff", {
+        get: function () {
+            return new TimeOff_1.default(this._apiKey, this.workspaceId);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Workspace.prototype, "holidays", {
+        get: function () {
+            return new Holiday_1.default(this._apiKey, this.workspaceId);
         },
         enumerable: false,
         configurable: true
