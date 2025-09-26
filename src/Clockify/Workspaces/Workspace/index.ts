@@ -9,6 +9,8 @@ import UserGroups from "./UserGroups";
 import Reports from "./Reports";
 import Expenses from "./Expenses";
 import ExpenseCategories from "./ExpenseCategories";
+import TimeOff from "./TimeOff";
+import Holiday from "./Holiday";
 
 export default class Workspace extends ClockifyAPI {
 
@@ -61,5 +63,13 @@ export default class Workspace extends ClockifyAPI {
 
   get expenseCategories(): ExpenseCategories {
     return new ExpenseCategories(this._apiKey, this.workspaceId);
+  }
+
+  get timeOff(): TimeOff {
+    return new TimeOff(this._apiKey, this.workspaceId);
+  }
+
+  get holidays() {
+    return new Holiday(this._apiKey, this.workspaceId);
   }
 }
