@@ -34,12 +34,13 @@ type TimeOffRequestType = {
       end: string; // date-time
       start: string; // date-time
     };
+    halfDayPeriod: "FIRST_HALF" | "SECOND_HALF" | "NOT_DEFINED"; // string enum
     period: {
       end: string; // date-time
       start: string; // date-time
     };
-    timeUnit: TimeOffPeriodTimeUnitEnum
   };
+  timeUnit: TimeOffPeriodTimeUnitEnum
   userEmail: string; // user's email
   userId: string; // user identifier
   userName: string; // user's username
