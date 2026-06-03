@@ -1,9 +1,11 @@
-import ClockifyAPI, {IDeletable, IPuttable} from "../../../../../Api/ClockifyApi";
+import ClockifyAPI, {IDeletable, IGettable, IPuttable} from "../../../../../Api/ClockifyApi";
 import UpdateClientQuery from "../../../../../Queries/UpdateClientQuery";
 import type { UpdateClientType } from "../../../../../Types/UpdateClientType";
 import type { ClientType } from "../../../../../Types/ClientType";
+import ProjectsQuery from "../../../../../Queries/ProjectsQuery";
+import {ProjectType} from "../../../../../Types/ProjectType";
 
-export default class Client extends ClockifyAPI implements IPuttable<ClientType>, IDeletable<ClientType> {
+export default class Client extends ClockifyAPI implements IPuttable<ClientType>, IGettable<ClientType>, IDeletable<ClientType> {
 
   workspaceId: string;
   clientId: string;
@@ -23,6 +25,13 @@ export default class Client extends ClockifyAPI implements IPuttable<ClientType>
    */
   put(data: UpdateClientType, query: UpdateClientQuery = {}): Promise<ClientType> {
     return this.axiosPut<ClientType>(data, query);
+  }
+
+  /**
+   * Find client by ID
+   */
+  get(): Promise<ClientType> {
+    return this.axiosGet<ClientType>({});
   }
 
   /**

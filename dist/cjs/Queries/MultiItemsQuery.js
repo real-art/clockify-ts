@@ -5,5 +5,5 @@ var QuerySortOrderEnum;
 (function (QuerySortOrderEnum) {
     QuerySortOrderEnum["ascending"] = "ASCENDING";
     QuerySortOrderEnum["descending"] = "DESCENDING";
-})(QuerySortOrderEnum = exports.QuerySortOrderEnum || (exports.QuerySortOrderEnum = {}));
+})(QuerySortOrderEnum || (exports.QuerySortOrderEnum = QuerySortOrderEnum = {}));
 //# sourceMappingURL=MultiItemsQuery.js.map

@@ -1,4 +1,4 @@
-declare type TimeEntryType = {
+type TimeEntryType = {
     "billable": boolean;
     "description": string;
     "id": string;
@@ -13,11 +13,12 @@ declare type TimeEntryType = {
     };
     "userId": string;
     "workspaceId": string;
-    "customFields": Array<{
+    "customFieldValues": Array<{
         "customFieldId": string;
         "timeEntryId": string;
         "value": string;
         "name": string;
+        "type": string;
     }>;
 };
 export { TimeEntryType, };

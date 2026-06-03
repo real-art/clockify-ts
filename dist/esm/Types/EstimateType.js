@@ -1,3 +1,8 @@
+export var EstimateTypeEnum;
+(function (EstimateTypeEnum) {
+    EstimateTypeEnum["manual"] = "MANUAL";
+    EstimateTypeEnum["auto"] = "AUTO";
+})(EstimateTypeEnum || (EstimateTypeEnum = {}));
 export var TimeEstimateTypeEnum;
 (function (TimeEstimateTypeEnum) {
     TimeEstimateTypeEnum["manual"] = "MANUAL";

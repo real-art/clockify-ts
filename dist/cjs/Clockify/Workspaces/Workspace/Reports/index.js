@@ -21,6 +21,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var Summary_1 = __importDefault(require("./Summary"));
 var ClockifyApi_1 = __importDefault(require("../../../../Api/ClockifyApi"));
 var Detailed_1 = __importDefault(require("./Detailed"));
+var Expenses_1 = __importDefault(require("./Expenses"));
 var Reports = (function (_super) {
     __extends(Reports, _super);
     function Reports(apiKey, workspaceId) {
@@ -38,6 +39,13 @@ var Reports = (function (_super) {
     Object.defineProperty(Reports.prototype, "detailed", {
         get: function () {
             return new Detailed_1.default(this._apiKey, this.workspaceId);
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Reports.prototype, "expenses", {
+        get: function () {
+            return new Expenses_1.default(this._apiKey, this.workspaceId);
         },
         enumerable: false,
         configurable: true

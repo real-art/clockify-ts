@@ -1,6 +1,7 @@
 import Summary from "./Summary";
 import ClockifyAPI from "../../../../Api/ClockifyApi";
 import Detailed from "./Detailed";
+import Expenses from "./Expenses";
 
 export default class Reports extends ClockifyAPI {
 
@@ -19,4 +20,7 @@ export default class Reports extends ClockifyAPI {
     return new Detailed(this._apiKey, this.workspaceId);
   }
 
+  get expenses(): Expenses {
+    return new Expenses(this._apiKey, this.workspaceId);
+  }
 }

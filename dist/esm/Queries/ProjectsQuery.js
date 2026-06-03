@@ -8,4 +8,9 @@ export var ProjectsQueryUserStatusEnum;
     ProjectsQueryUserStatusEnum["active"] = "ACTIVE";
     ProjectsQueryUserStatusEnum["inactive"] = "INACTIVE";
 })(ProjectsQueryUserStatusEnum || (ProjectsQueryUserStatusEnum = {}));
+export var ProjectsQueryAccessEnum;
+(function (ProjectsQueryAccessEnum) {
+    ProjectsQueryAccessEnum["PUBLIC"] = "PUBLIC";
+    ProjectsQueryAccessEnum["PRIVATE"] = "PRIVATE";
+})(ProjectsQueryAccessEnum || (ProjectsQueryAccessEnum = {}));
 //# sourceMappingURL=ProjectsQuery.js.map

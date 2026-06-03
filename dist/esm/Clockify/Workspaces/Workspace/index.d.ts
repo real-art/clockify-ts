@@ -7,6 +7,10 @@ import CustomFields from "./CustomFields";
 import TimeEntries from "./TimeEntries";
 import UserGroups from "./UserGroups";
 import Reports from "./Reports";
+import Expenses from "./Expenses";
+import ExpenseCategories from "./ExpenseCategories";
+import TimeOff from "./TimeOff";
+import Holiday from "./Holiday";
 export default class Workspace extends ClockifyAPI {
     workspaceId: string;
     constructor(apiKey: string, workspaceId: string);
@@ -19,4 +23,8 @@ export default class Workspace extends ClockifyAPI {
     get userGroups(): UserGroups;
     get users(): Users;
     get reports(): Reports;
+    get expenses(): Expenses;
+    get expenseCategories(): ExpenseCategories;
+    get timeOff(): TimeOff;
+    get holidays(): Holiday;
 }

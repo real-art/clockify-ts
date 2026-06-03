@@ -92,6 +92,8 @@ The following clockify API features are already well implemented and tested.
 - Group: :x:
 - Workspace :heavy_check_mark:
 - Custom Fields :heavy_check_mark:
+- Holidays :large_yellow_circle: (read only)
+- Time Off :large_yellow_circle: (read only)
 
 #### Report Endpoints
 
@@ -500,8 +502,15 @@ Here you find an exhaustive list of all Types, Queries and Enums you can import 
 ### Available Types
 - ClientType
 - CustomFieldType
+- DetailedReportType
+- DetailedReportTimeEntryType
 - EntityType
 - EstimateType
+- ExpenseCategoryType
+- ExpenseDetailType
+- ExpenseReportType
+- ExpenseType
+- HolidayType
 - MembershipType
 - MemberType
 - NewClientType
@@ -514,6 +523,7 @@ Here you find an exhaustive list of all Types, Queries and Enums you can import 
 - TagType
 - TaskType
 - TimeEntryType
+- TimeOffRequestType
 - UpdateClientType
 - UpdateProjectType
 - UserGroupType
@@ -542,6 +552,7 @@ Here you find an exhaustive list of all Types, Queries and Enums you can import 
 - CustomFieldTypeEnum,
 - CustomFieldStatusEnum,
 - CustomFieldProjectDefaultValuesStatusEnum,
+- HolidayQuery
 - TimeEstimateTypeEnum,
 - BudgetEstimateTypeEnum,
 - TimeEstimateResetOptionEnum,
@@ -549,6 +560,7 @@ Here you find an exhaustive list of all Types, Queries and Enums you can import 
 - MembershipStatusEnum,
 - MembershipTypeEnum,
 - TaskStatusEnum,
+- TimeOffRequestType
 - RoleEnum,
 
 

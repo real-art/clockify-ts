@@ -1,9 +1,10 @@
-declare type UpdateProjectType = {
+type UpdateProjectType = {
     "name": string;
     "clientId"?: string;
     "isPublic"?: boolean;
     "hourlyRate"?: {
-        "amount": number;
+        amount: number;
+        currency: string;
     };
     "color"?: string;
     "note"?: string;
