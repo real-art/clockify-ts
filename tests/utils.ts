@@ -1,15 +1,14 @@
 import {config as dotenvConfig} from "dotenv";
-import * as dotenv from 'dotenv';
-dotenv.config();
-// dotenvConfig()
 
-// export function randomString(): string {
-//   return Math.random().toString(36).substring(7);
-// }
-//
-// export function randomInt(): number {
-//   return Math.floor(Math.random() * 1000);
-// }
+dotenvConfig()
+
+export function randomString(): string {
+  return Math.random().toString(36).substring(7);
+}
+
+export function randomInt(): number {
+  return Math.floor(Math.random() * 1000);
+}
 
 export const clockifyApiKey = process.env.CLOCKIFY_API_KEY || "NOT_FOUND";
 export const testUserId = process.env.TEST_USER_ID || "NOT_FOUND";

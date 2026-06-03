@@ -1,3 +1,7 @@
+export declare enum EstimateTypeEnum {
+    manual = "MANUAL",
+    auto = "AUTO"
+}
 export declare enum TimeEstimateTypeEnum {
     manual = "MANUAL",
     auto = "AUTO"
@@ -12,7 +16,7 @@ export declare enum TimeEstimateResetOptionEnum {
 export declare enum BudgetEstimateResetOptionEnum {
     monthly = "MONTHLY"
 }
-declare type EstimateType = {
+type EstimateType = {
     "timeEstimate"?: {
         "estimate"?: string;
         "type"?: TimeEstimateTypeEnum;

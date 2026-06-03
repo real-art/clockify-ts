@@ -11,29 +11,29 @@ var RequestDetailedReportGroupsEnum;
     RequestDetailedReportGroupsEnum["user"] = "USER";
     RequestDetailedReportGroupsEnum["userGroup"] = "USER_GROUP";
     RequestDetailedReportGroupsEnum["timeEntry"] = "TIMEENTRY";
-})(RequestDetailedReportGroupsEnum = exports.RequestDetailedReportGroupsEnum || (exports.RequestDetailedReportGroupsEnum = {}));
+})(RequestDetailedReportGroupsEnum || (exports.RequestDetailedReportGroupsEnum = RequestDetailedReportGroupsEnum = {}));
 var RequestDetailedReportTotalOptionEnum;
 (function (RequestDetailedReportTotalOptionEnum) {
     RequestDetailedReportTotalOptionEnum["calculate"] = "CALCULATE";
     RequestDetailedReportTotalOptionEnum["exclude"] = "EXCLUDE";
-})(RequestDetailedReportTotalOptionEnum = exports.RequestDetailedReportTotalOptionEnum || (exports.RequestDetailedReportTotalOptionEnum = {}));
+})(RequestDetailedReportTotalOptionEnum || (exports.RequestDetailedReportTotalOptionEnum = RequestDetailedReportTotalOptionEnum = {}));
 var RequestDetailedReportSortOrderEnum;
 (function (RequestDetailedReportSortOrderEnum) {
     RequestDetailedReportSortOrderEnum["ascneding"] = "ASCENDING";
     RequestDetailedReportSortOrderEnum["descending"] = "DESCENDING";
-})(RequestDetailedReportSortOrderEnum = exports.RequestDetailedReportSortOrderEnum || (exports.RequestDetailedReportSortOrderEnum = {}));
+})(RequestDetailedReportSortOrderEnum || (exports.RequestDetailedReportSortOrderEnum = RequestDetailedReportSortOrderEnum = {}));
 var RequestDetailedReportInvoicingStateEnum;
 (function (RequestDetailedReportInvoicingStateEnum) {
     RequestDetailedReportInvoicingStateEnum["invoiced"] = "INVOICED";
     RequestDetailedReportInvoicingStateEnum["uninvoiced"] = "UNINVOICED";
     RequestDetailedReportInvoicingStateEnum["all"] = "ALL";
-})(RequestDetailedReportInvoicingStateEnum = exports.RequestDetailedReportInvoicingStateEnum || (exports.RequestDetailedReportInvoicingStateEnum = {}));
+})(RequestDetailedReportInvoicingStateEnum || (exports.RequestDetailedReportInvoicingStateEnum = RequestDetailedReportInvoicingStateEnum = {}));
 var RequestDetailedReportApprovalStateEnum;
 (function (RequestDetailedReportApprovalStateEnum) {
     RequestDetailedReportApprovalStateEnum["approved"] = "APPROVED";
     RequestDetailedReportApprovalStateEnum["unapproved"] = "UNAPPROVED";
     RequestDetailedReportApprovalStateEnum["all"] = "ALL";
-})(RequestDetailedReportApprovalStateEnum = exports.RequestDetailedReportApprovalStateEnum || (exports.RequestDetailedReportApprovalStateEnum = {}));
+})(RequestDetailedReportApprovalStateEnum || (exports.RequestDetailedReportApprovalStateEnum = RequestDetailedReportApprovalStateEnum = {}));
 var RequestDetailedReportSortColumnEnum;
 (function (RequestDetailedReportSortColumnEnum) {
     RequestDetailedReportSortColumnEnum["id"] = "ID";
@@ -41,60 +41,60 @@ var RequestDetailedReportSortColumnEnum;
     RequestDetailedReportSortColumnEnum["user"] = "USER";
     RequestDetailedReportSortColumnEnum["duration"] = "DURATION";
     RequestDetailedReportSortColumnEnum["date"] = "DATE";
-})(RequestDetailedReportSortColumnEnum = exports.RequestDetailedReportSortColumnEnum || (exports.RequestDetailedReportSortColumnEnum = {}));
+})(RequestDetailedReportSortColumnEnum || (exports.RequestDetailedReportSortColumnEnum = RequestDetailedReportSortColumnEnum = {}));
 var RequestDetailedReportAmountShownEnum;
 (function (RequestDetailedReportAmountShownEnum) {
     RequestDetailedReportAmountShownEnum["hideAmount"] = "HIDE_AMOUNT";
     RequestDetailedReportAmountShownEnum["earned"] = "EARNED";
     RequestDetailedReportAmountShownEnum["cost"] = "COST";
     RequestDetailedReportAmountShownEnum["profit"] = "PROFIT";
-})(RequestDetailedReportAmountShownEnum = exports.RequestDetailedReportAmountShownEnum || (exports.RequestDetailedReportAmountShownEnum = {}));
+})(RequestDetailedReportAmountShownEnum || (exports.RequestDetailedReportAmountShownEnum = RequestDetailedReportAmountShownEnum = {}));
 var RequestDetailedReportExportTypeEnum;
 (function (RequestDetailedReportExportTypeEnum) {
     RequestDetailedReportExportTypeEnum["json"] = "JSON";
     RequestDetailedReportExportTypeEnum["csv"] = "CSV";
     RequestDetailedReportExportTypeEnum["xlsx"] = "XLSX";
     RequestDetailedReportExportTypeEnum["pdf"] = "PDF";
-})(RequestDetailedReportExportTypeEnum = exports.RequestDetailedReportExportTypeEnum || (exports.RequestDetailedReportExportTypeEnum = {}));
+})(RequestDetailedReportExportTypeEnum || (exports.RequestDetailedReportExportTypeEnum = RequestDetailedReportExportTypeEnum = {}));
 var RequestDetailedReportContainsFilterEnum;
 (function (RequestDetailedReportContainsFilterEnum) {
     RequestDetailedReportContainsFilterEnum["contains"] = "CONTAINS";
     RequestDetailedReportContainsFilterEnum["doesNotContain"] = "DOES_NOT_CONTAIN";
-})(RequestDetailedReportContainsFilterEnum = exports.RequestDetailedReportContainsFilterEnum || (exports.RequestDetailedReportContainsFilterEnum = {}));
+})(RequestDetailedReportContainsFilterEnum || (exports.RequestDetailedReportContainsFilterEnum = RequestDetailedReportContainsFilterEnum = {}));
 var RequestDetailedReportContainedInTimeEntryFilterEnum;
 (function (RequestDetailedReportContainedInTimeEntryFilterEnum) {
     RequestDetailedReportContainedInTimeEntryFilterEnum["contains"] = "CONTAINS";
     RequestDetailedReportContainedInTimeEntryFilterEnum["constainsOnly"] = "CONTAINS_ONLY";
     RequestDetailedReportContainedInTimeEntryFilterEnum["doesNotContain"] = "DOES_NOT_CONTAIN";
-})(RequestDetailedReportContainedInTimeEntryFilterEnum = exports.RequestDetailedReportContainedInTimeEntryFilterEnum || (exports.RequestDetailedReportContainedInTimeEntryFilterEnum = {}));
+})(RequestDetailedReportContainedInTimeEntryFilterEnum || (exports.RequestDetailedReportContainedInTimeEntryFilterEnum = RequestDetailedReportContainedInTimeEntryFilterEnum = {}));
 var RequestDetailedReportProjectStatusFilterEnum;
 (function (RequestDetailedReportProjectStatusFilterEnum) {
     RequestDetailedReportProjectStatusFilterEnum["all"] = "ALL";
     RequestDetailedReportProjectStatusFilterEnum["active"] = "ACTIVE";
     RequestDetailedReportProjectStatusFilterEnum["archived"] = "ARCHIVED";
-})(RequestDetailedReportProjectStatusFilterEnum = exports.RequestDetailedReportProjectStatusFilterEnum || (exports.RequestDetailedReportProjectStatusFilterEnum = {}));
+})(RequestDetailedReportProjectStatusFilterEnum || (exports.RequestDetailedReportProjectStatusFilterEnum = RequestDetailedReportProjectStatusFilterEnum = {}));
 var RequestDetailedReportClientStatusFilterEnum;
 (function (RequestDetailedReportClientStatusFilterEnum) {
     RequestDetailedReportClientStatusFilterEnum["all"] = "ALL";
     RequestDetailedReportClientStatusFilterEnum["active"] = "ACTIVE";
     RequestDetailedReportClientStatusFilterEnum["archived"] = "ARCHIVED";
-})(RequestDetailedReportClientStatusFilterEnum = exports.RequestDetailedReportClientStatusFilterEnum || (exports.RequestDetailedReportClientStatusFilterEnum = {}));
+})(RequestDetailedReportClientStatusFilterEnum || (exports.RequestDetailedReportClientStatusFilterEnum = RequestDetailedReportClientStatusFilterEnum = {}));
 var RequestDetailedReportTagStatusFilterEnum;
 (function (RequestDetailedReportTagStatusFilterEnum) {
     RequestDetailedReportTagStatusFilterEnum["all"] = "ALL";
     RequestDetailedReportTagStatusFilterEnum["active"] = "ACTIVE";
     RequestDetailedReportTagStatusFilterEnum["archived"] = "ARCHIVED";
-})(RequestDetailedReportTagStatusFilterEnum = exports.RequestDetailedReportTagStatusFilterEnum || (exports.RequestDetailedReportTagStatusFilterEnum = {}));
+})(RequestDetailedReportTagStatusFilterEnum || (exports.RequestDetailedReportTagStatusFilterEnum = RequestDetailedReportTagStatusFilterEnum = {}));
 var RequestDetailedReportUserStatusFilterEnum;
 (function (RequestDetailedReportUserStatusFilterEnum) {
     RequestDetailedReportUserStatusFilterEnum["all"] = "ALL";
     RequestDetailedReportUserStatusFilterEnum["active"] = "ACTIVE";
     RequestDetailedReportUserStatusFilterEnum["inactive"] = "INACTIVE";
-})(RequestDetailedReportUserStatusFilterEnum = exports.RequestDetailedReportUserStatusFilterEnum || (exports.RequestDetailedReportUserStatusFilterEnum = {}));
+})(RequestDetailedReportUserStatusFilterEnum || (exports.RequestDetailedReportUserStatusFilterEnum = RequestDetailedReportUserStatusFilterEnum = {}));
 var RequestDetailedReportTaskStatusFilterEnum;
 (function (RequestDetailedReportTaskStatusFilterEnum) {
     RequestDetailedReportTaskStatusFilterEnum["all"] = "ALL";
     RequestDetailedReportTaskStatusFilterEnum["active"] = "ACTIVE";
     RequestDetailedReportTaskStatusFilterEnum["done"] = "DONE";
-})(RequestDetailedReportTaskStatusFilterEnum = exports.RequestDetailedReportTaskStatusFilterEnum || (exports.RequestDetailedReportTaskStatusFilterEnum = {}));
+})(RequestDetailedReportTaskStatusFilterEnum || (exports.RequestDetailedReportTaskStatusFilterEnum = RequestDetailedReportTaskStatusFilterEnum = {}));
 //# sourceMappingURL=RequestDetailedReportType.js.map

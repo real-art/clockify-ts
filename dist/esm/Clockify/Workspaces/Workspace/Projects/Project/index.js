@@ -28,7 +28,7 @@ var Project = (function (_super) {
         return _this;
     }
     Project.prototype.resourceSubPath = function () {
-        return "/workspaces/" + this.workspaceId + "/projects/" + this.projectId;
+        return "/workspaces/".concat(this.workspaceId, "/projects/").concat(this.projectId);
     };
     Object.defineProperty(Project.prototype, "customFields", {
         get: function () {
@@ -65,8 +65,9 @@ var Project = (function (_super) {
         enumerable: false,
         configurable: true
     });
-    Project.prototype.get = function () {
-        return this.axiosGet({});
+    Project.prototype.get = function (query) {
+        if (query === void 0) { query = {}; }
+        return this.axiosGet(query);
     };
     Project.prototype.put = function (data, query) {
         if (query === void 0) { query = {}; }

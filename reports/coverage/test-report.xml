@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/reports.test.ts">
-        <testCase name="Detailed report for test project" duration="1055"/>
+    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/holiday.test.ts">
+        <testCase name="Get holidays for a workspace" duration="781"/>
+        <testCase name="Get holidays for a workspace" duration="153"/>
     </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/task.test.ts">
-        <testCase name="Find tasks on project" duration="262"/>
-        <testCase name="Find task on project by ID" duration="167"/>
-    </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/timeEntry.test.ts">
-        <testCase name="Get your time entries on workspace" duration="649"/>
-        <testCase name="Get a specific time entry on workspace" duration="160"/>
-    </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/project.test.ts">
-        <testCase name="Get all projects on workspace" duration="444"/>
-        <testCase name="Find project by ID" duration="152"/>
-    </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/users.test.ts">
-        <testCase name="Get currently logged in user&apos;s info" duration="360"/>
-        <testCase name="Find all users on workspace" duration="152"/>
-    </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/workspaces.test.ts">
-        <testCase name="Get all my workspaces" duration="261"/>
-    </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/client.test.ts">
-        <testCase name="Find clients on workspace" duration="162"/>
-    </file>
-    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/tags.test.ts">
-        <testCase name="Find tags on workspace" duration="345"/>
+    <file path="/Users/pat.murray/Documents/GitHub/clockify-ts-ra/tests/timeoff.test.ts">
+        <testCase name="Get all time off for a user" duration="238"/>
     </file>
 </testExecutions>

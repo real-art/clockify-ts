@@ -9,7 +9,7 @@ var UserSettingsSummaryReportSettingsGroupEnum;
     UserSettingsSummaryReportSettingsGroupEnum["tag"] = "Tag";
     UserSettingsSummaryReportSettingsGroupEnum["timeEntry"] = "Time Entry";
     UserSettingsSummaryReportSettingsGroupEnum["task"] = "Task";
-})(UserSettingsSummaryReportSettingsGroupEnum = exports.UserSettingsSummaryReportSettingsGroupEnum || (exports.UserSettingsSummaryReportSettingsGroupEnum = {}));
+})(UserSettingsSummaryReportSettingsGroupEnum || (exports.UserSettingsSummaryReportSettingsGroupEnum = UserSettingsSummaryReportSettingsGroupEnum = {}));
 var UserSettingsSummaryReportSettingsSubroupEnum;
 (function (UserSettingsSummaryReportSettingsSubroupEnum) {
     UserSettingsSummaryReportSettingsSubroupEnum["project"] = "Project";
@@ -17,12 +17,12 @@ var UserSettingsSummaryReportSettingsSubroupEnum;
     UserSettingsSummaryReportSettingsSubroupEnum["user"] = "User";
     UserSettingsSummaryReportSettingsSubroupEnum["tag"] = "Tag";
     UserSettingsSummaryReportSettingsSubroupEnum["timeEntry"] = "Time Entry";
-})(UserSettingsSummaryReportSettingsSubroupEnum = exports.UserSettingsSummaryReportSettingsSubroupEnum || (exports.UserSettingsSummaryReportSettingsSubroupEnum = {}));
+})(UserSettingsSummaryReportSettingsSubroupEnum || (exports.UserSettingsSummaryReportSettingsSubroupEnum = UserSettingsSummaryReportSettingsSubroupEnum = {}));
 var UserStatusEnum;
 (function (UserStatusEnum) {
     UserStatusEnum["pending"] = "PENDING";
     UserStatusEnum["active"] = "ACTIVE";
     UserStatusEnum["declined"] = "DECLINED";
     UserStatusEnum["inactive"] = "INACTIVE";
-})(UserStatusEnum = exports.UserStatusEnum || (exports.UserStatusEnum = {}));
+})(UserStatusEnum || (exports.UserStatusEnum = UserStatusEnum = {}));
 //# sourceMappingURL=UserType.js.map

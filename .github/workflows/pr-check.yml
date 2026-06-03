@@ -1,0 +1,21 @@
+name: PR checks
+on:
+  pull_request:
+
+jobs:
+  pr-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Validate commit messages
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          git log origin/${{ github.base_ref }}..HEAD --pretty=format:%s | while read msg; do
+            echo "Message: $msg"
+            if [ -z "$msg" ]; then
+              echo "ERROR: Commit message is empty"
+              exit 1
+            fi
+          done

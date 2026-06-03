@@ -5,5 +5,5 @@ var TaskStatusEnum;
 (function (TaskStatusEnum) {
     TaskStatusEnum["active"] = "ACTIVE";
     TaskStatusEnum["done"] = "DONE";
-})(TaskStatusEnum = exports.TaskStatusEnum || (exports.TaskStatusEnum = {}));
+})(TaskStatusEnum || (exports.TaskStatusEnum = TaskStatusEnum = {}));
 //# sourceMappingURL=NewTaskType.js.map

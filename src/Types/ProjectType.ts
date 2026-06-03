@@ -1,15 +1,16 @@
 import type {MembershipStatusEnum, MembershipTypeEnum} from "./MembershipType";
 import {
   BudgetEstimateResetOptionEnum,
-  BudgetEstimateTypeEnum,
+  BudgetEstimateTypeEnum, EstimateTypeEnum,
   TimeEstimateResetOptionEnum,
   TimeEstimateTypeEnum
 } from "./EstimateType";
+import {ClientType} from "./ClientType";
 
 type ProjectType = {
   "id": string,
   "name": string,
-  "hourlyRate": null | number,
+  "hourlyRate": null | {amount:number,currency:string},
   "clientId": string,
   "workspaceId": string,
   "billable": boolean,
@@ -26,11 +27,17 @@ type ProjectType = {
   "color": string,
   "archived": boolean,
   "duration": string,
-  "clientName": string,
+  "client": ClientType | undefined,
+  "clientName": string | undefined,
   "note": string,
   "template": boolean,
   "public": boolean,
   "costRate": null | number,
+  "estimate":
+    {
+      estimate: string,
+      type: EstimateTypeEnum
+    },
   "timeEstimate": {
     "estimate": string,
     "type": TimeEstimateTypeEnum,
@@ -43,6 +50,28 @@ type ProjectType = {
     "resetOption": null | BudgetEstimateResetOptionEnum,
     "active": boolean,
   } | null,
+  "expenses": Array<{
+    id: string
+    workspaceId: string
+    userId: string
+    date: string
+    projectId: string
+    categoryId: string
+    notes: string
+    quantity: number
+    billable: boolean
+    fileId: string
+    total: number
+    locked: boolean
+  }>,
+  "customFields":
+    {
+      "customFieldId": string,
+      "customFieldName": string,
+      "customFieldType": string,
+      "userId": string,
+      "value": string,
+    }[],
 }
 export {
   ProjectType,

@@ -6,5 +6,5 @@ var CustomFieldQueryStatusEnum;
     CustomFieldQueryStatusEnum["inactive"] = "INACTIVE";
     CustomFieldQueryStatusEnum["visible"] = "VISIBLE";
     CustomFieldQueryStatusEnum["invisible"] = "INVISIBLE";
-})(CustomFieldQueryStatusEnum = exports.CustomFieldQueryStatusEnum || (exports.CustomFieldQueryStatusEnum = {}));
+})(CustomFieldQueryStatusEnum || (exports.CustomFieldQueryStatusEnum = CustomFieldQueryStatusEnum = {}));
 //# sourceMappingURL=CustomFieldsQuery.js.map

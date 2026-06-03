@@ -28,11 +28,14 @@ var Client = (function (_super) {
         return _this;
     }
     Client.prototype.resourceSubPath = function () {
-        return "/workspaces/" + this.workspaceId + "/clients/" + this.clientId;
+        return "/workspaces/".concat(this.workspaceId, "/clients/").concat(this.clientId);
     };
     Client.prototype.put = function (data, query) {
         if (query === void 0) { query = {}; }
         return this.axiosPut(data, query);
+    };
+    Client.prototype.get = function () {
+        return this.axiosGet({});
     };
     Client.prototype.delete = function () {
         return this.axiosDelete({});

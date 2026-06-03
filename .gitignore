@@ -65,3 +65,4 @@ node_modules/
 
 /reports/coverage/lcov-report
 eslint_report.json
+**.DS_Store
