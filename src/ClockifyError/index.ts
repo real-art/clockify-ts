@@ -1,6 +1,11 @@
 import {AxiosError} from "axios";
 import { getReasonPhrase } from "http-status-codes";
 
+interface ClockifyErrorResponse {
+  message?: string;
+  path?: string;
+}
+
 export default class ClockifyError extends Error {
 
   constructor(error: AxiosError, ) {
@@ -12,8 +17,8 @@ export default class ClockifyError extends Error {
        * status code that falls out of the range of 2xx
        */
       const statusCode = error.response.status;
-      // message = `Response Error[${requestMethod}:${statusCode}]: ${getReasonPhrase(statusCode)}. Message: ${error.response.data?.message}. Resource: ${error.response.data?.path}`;
-      message = `Response Error[${requestMethod}:${statusCode}]: ${getReasonPhrase(statusCode)}. Message: ${error.response.data}. Resource: ${error.response.data}`;
+      const errorData = error.response.data as ClockifyErrorResponse;
+      message = `Response Error[${requestMethod}:${statusCode}]: ${getReasonPhrase(statusCode)}. Message: ${errorData.message}. Resource: ${errorData.path}`;
     } else if (error.request) {
       /*
        * The request was made but no response was received, `error.request`

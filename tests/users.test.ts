@@ -1,6 +1,6 @@
+import { test, expect } from '@jest/globals';
 import Clockify from "../src/Clockify";
 import {clockifyApiKey, testWorkspaceId, testUserEmail, testUserId} from "./utils";
-import {UserStatusEnum} from "../src/Types/UserType";
 
 const clockify = new Clockify(clockifyApiKey);
 
@@ -15,23 +15,4 @@ test("Find all users on workspace", async () => {
   });
   expect(members.length).toBe(1);
   expect(members[0].id).toBe(testUserId);
-})
-
-test.skip("Add user to workspace", async () => {
-  const member = await clockify.workspace.withId(testWorkspaceId).users.post({
-    email: "test@example.com"
-  })
-  expect(member.id).toBeDefined();
-})
-
-test.skip("Update user's workspace status", async () => {
-  const inactiveUser = await clockify.workspace.withId(testWorkspaceId).users.withId(testUserId).put({
-    membershipStatus: UserStatusEnum.inactive,
-  })
-  expect(inactiveUser.status).toBe(UserStatusEnum.inactive);
-})
-
-test.skip("Remove user from workspace", async () => {
-  const deletedUser = await clockify.workspace.withId(testWorkspaceId).users.withId(testUserId).delete();
-  expect(deletedUser).toBe(null);
 })
