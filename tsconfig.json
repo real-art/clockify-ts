@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "declaration": true,
     "noImplicitAny": true,
     "removeComments": true,
@@ -10,6 +10,7 @@
     "alwaysStrict": true,
     "strict": true,
     "outDir": "dist/esm",
+    "rootDir": "./src",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true

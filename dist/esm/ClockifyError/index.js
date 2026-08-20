@@ -1,38 +1,24 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-import { getReasonPhrase } from "http-status-codes";
-var ClockifyError = (function (_super) {
-    __extends(ClockifyError, _super);
-    function ClockifyError(error) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const http_status_codes_1 = require("http-status-codes");
+class ClockifyError extends Error {
+    constructor(error) {
         var _a, _b;
-        var message;
-        var requestMethod = (_b = (_a = error.config) === null || _a === void 0 ? void 0 : _a.method) === null || _b === void 0 ? void 0 : _b.toUpperCase();
+        let message;
+        const requestMethod = (_b = (_a = error.config) === null || _a === void 0 ? void 0 : _a.method) === null || _b === void 0 ? void 0 : _b.toUpperCase();
         if (error.response) {
-            var statusCode = error.response.status;
-            message = "Response Error[".concat(requestMethod, ":").concat(statusCode, "]: ").concat(getReasonPhrase(statusCode), ". Message: ").concat(error.response.data, ". Resource: ").concat(error.response.data);
+            const statusCode = error.response.status;
+            const errorData = error.response.data;
+            message = `Response Error[${requestMethod}:${statusCode}]: ${(0, http_status_codes_1.getReasonPhrase)(statusCode)}. Message: ${errorData.message}. Resource: ${errorData.path}`;
         }
         else if (error.request) {
-            message = "Response Error[".concat(requestMethod, "]: ").concat(JSON.stringify(error.request));
+            message = `Response Error[${requestMethod}]: ${JSON.stringify(error.request)}`;
         }
         else {
-            message = "Error: ".concat(error.message);
+            message = `Error: ${error.message}`;
         }
-        return _super.call(this, message) || this;
+        super(message);
     }
-    return ClockifyError;
-}(Error));
-export default ClockifyError;
+}
+exports.default = ClockifyError;
 //# sourceMappingURL=index.js.map
