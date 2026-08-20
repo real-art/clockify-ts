@@ -1,126 +1,65 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-import ClockifyAPI from "../../../Api/ClockifyApi";
-import Users from "./Users";
-import Clients from "./Clients";
-import Projects from "./Projects";
-import Tags from "./Tags";
-import CustomFields from "./CustomFields";
-import TimeEntries from "./TimeEntries";
-import UserGroups from "./UserGroups";
-import Reports from "./Reports";
-import Expenses from "./Expenses";
-import ExpenseCategories from "./ExpenseCategories";
-import TimeOff from "./TimeOff";
-import Holiday from "./Holiday";
-var Workspace = (function (_super) {
-    __extends(Workspace, _super);
-    function Workspace(apiKey, workspaceId) {
-        var _this = _super.call(this, apiKey) || this;
-        _this.workspaceId = workspaceId;
-        return _this;
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const ClockifyApi_1 = __importDefault(require("../../../Api/ClockifyApi"));
+const Users_1 = __importDefault(require("./Users"));
+const Clients_1 = __importDefault(require("./Clients"));
+const Projects_1 = __importDefault(require("./Projects"));
+const Tags_1 = __importDefault(require("./Tags"));
+const CustomFields_1 = __importDefault(require("./CustomFields"));
+const TimeEntries_1 = __importDefault(require("./TimeEntries"));
+const UserGroups_1 = __importDefault(require("./UserGroups"));
+const Reports_1 = __importDefault(require("./Reports"));
+const Expenses_1 = __importDefault(require("./Expenses"));
+const ExpenseCategories_1 = __importDefault(require("./ExpenseCategories"));
+const TimeOff_1 = __importDefault(require("./TimeOff"));
+const Holiday_1 = __importDefault(require("./Holiday"));
+class Workspace extends ClockifyApi_1.default {
+    constructor(apiKey, workspaceId) {
+        super(apiKey);
+        this.workspaceId = workspaceId;
     }
-    Workspace.prototype.resourceSubPath = function () {
-        return "/workspaces/".concat(this.workspaceId);
-    };
-    Object.defineProperty(Workspace.prototype, "clients", {
-        get: function () {
-            return new Clients(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Workspace.prototype, "customFields", {
-        get: function () {
-            return new CustomFields(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Workspace.prototype, "projects", {
-        get: function () {
-            return new Projects(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Workspace.prototype, "tags", {
-        get: function () {
-            return new Tags(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Workspace.prototype, "timeEntries", {
-        get: function () {
-            return new TimeEntries(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Workspace.prototype, "userGroups", {
-        get: function () {
-            return new UserGroups(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Workspace.prototype, "users", {
-        get: function () {
-            return new Users(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Workspace.prototype, "reports", {
-        get: function () {
-            return new Reports(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Workspace.prototype, "expenses", {
-        get: function () {
-            return new Expenses(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Workspace.prototype, "expenseCategories", {
-        get: function () {
-            return new ExpenseCategories(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Workspace.prototype, "timeOff", {
-        get: function () {
-            return new TimeOff(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Workspace.prototype, "holidays", {
-        get: function () {
-            return new Holiday(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return Workspace;
-}(ClockifyAPI));
-export default Workspace;
+    resourceSubPath() {
+        return `/workspaces/${this.workspaceId}`;
+    }
+    get clients() {
+        return new Clients_1.default(this._apiKey, this.workspaceId);
+    }
+    get customFields() {
+        return new CustomFields_1.default(this._apiKey, this.workspaceId);
+    }
+    get projects() {
+        return new Projects_1.default(this._apiKey, this.workspaceId);
+    }
+    get tags() {
+        return new Tags_1.default(this._apiKey, this.workspaceId);
+    }
+    get timeEntries() {
+        return new TimeEntries_1.default(this._apiKey, this.workspaceId);
+    }
+    get userGroups() {
+        return new UserGroups_1.default(this._apiKey, this.workspaceId);
+    }
+    get users() {
+        return new Users_1.default(this._apiKey, this.workspaceId);
+    }
+    get reports() {
+        return new Reports_1.default(this._apiKey, this.workspaceId);
+    }
+    get expenses() {
+        return new Expenses_1.default(this._apiKey, this.workspaceId);
+    }
+    get expenseCategories() {
+        return new ExpenseCategories_1.default(this._apiKey, this.workspaceId);
+    }
+    get timeOff() {
+        return new TimeOff_1.default(this._apiKey, this.workspaceId);
+    }
+    get holidays() {
+        return new Holiday_1.default(this._apiKey, this.workspaceId);
+    }
+}
+exports.default = Workspace;
 //# sourceMappingURL=index.js.map

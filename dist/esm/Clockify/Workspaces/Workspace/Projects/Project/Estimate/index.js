@@ -1,34 +1,21 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-import ClockifyAPI from "../../../../../../Api/ClockifyApi";
-var Estimate = (function (_super) {
-    __extends(Estimate, _super);
-    function Estimate(apiKey, workspaceId, projectId) {
-        var _this = _super.call(this, apiKey) || this;
-        _this.workspaceId = workspaceId;
-        _this.projectId = projectId;
-        return _this;
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const ClockifyApi_1 = __importDefault(require("../../../../../../Api/ClockifyApi"));
+class Estimate extends ClockifyApi_1.default {
+    constructor(apiKey, workspaceId, projectId) {
+        super(apiKey);
+        this.workspaceId = workspaceId;
+        this.projectId = projectId;
     }
-    Estimate.prototype.resourceSubPath = function () {
-        return "/workspaces/".concat(this.workspaceId, "/projects/").concat(this.projectId, "/estimate");
-    };
-    Estimate.prototype.patch = function (data) {
+    resourceSubPath() {
+        return `/workspaces/${this.workspaceId}/projects/${this.projectId}/estimate`;
+    }
+    patch(data) {
         return this.axiosPatch(data, {});
-    };
-    return Estimate;
-}(ClockifyAPI));
-export default Estimate;
+    }
+}
+exports.default = Estimate;
 //# sourceMappingURL=index.js.map

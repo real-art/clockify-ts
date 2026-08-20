@@ -1,41 +1,27 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-import ClockifyAPI from "../../../../Api/ClockifyApi";
-import Project from "./Project";
-var Projects = (function (_super) {
-    __extends(Projects, _super);
-    function Projects(apiKey, workspaceId) {
-        var _this = _super.call(this, apiKey) || this;
-        _this.workspaceId = workspaceId;
-        return _this;
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const ClockifyApi_1 = __importDefault(require("../../../../Api/ClockifyApi"));
+const Project_1 = __importDefault(require("./Project"));
+class Projects extends ClockifyApi_1.default {
+    constructor(apiKey, workspaceId) {
+        super(apiKey);
+        this.workspaceId = workspaceId;
     }
-    Projects.prototype.resourceSubPath = function () {
-        return "/workspaces/".concat(this.workspaceId, "/projects");
-    };
-    Projects.prototype.withId = function (projectId) {
-        return new Project(this._apiKey, this.workspaceId, projectId);
-    };
-    Projects.prototype.get = function (query) {
-        if (query === void 0) { query = {}; }
+    resourceSubPath() {
+        return `/workspaces/${this.workspaceId}/projects`;
+    }
+    withId(projectId) {
+        return new Project_1.default(this._apiKey, this.workspaceId, projectId);
+    }
+    get(query = {}) {
         return this.axiosGet(query);
-    };
-    Projects.prototype.post = function (data) {
+    }
+    post(data) {
         return this.axiosPost(data, {});
-    };
-    return Projects;
-}(ClockifyAPI));
-export default Projects;
+    }
+}
+exports.default = Projects;
 //# sourceMappingURL=index.js.map

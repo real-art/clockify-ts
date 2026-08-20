@@ -1,51 +1,26 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-import Summary from "./Summary";
-import ClockifyAPI from "../../../../Api/ClockifyApi";
-import Detailed from "./Detailed";
-import Expenses from "./Expenses";
-var Reports = (function (_super) {
-    __extends(Reports, _super);
-    function Reports(apiKey, workspaceId) {
-        var _this = _super.call(this, apiKey) || this;
-        _this.workspaceId = workspaceId;
-        return _this;
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const Summary_1 = __importDefault(require("./Summary"));
+const ClockifyApi_1 = __importDefault(require("../../../../Api/ClockifyApi"));
+const Detailed_1 = __importDefault(require("./Detailed"));
+const Expenses_1 = __importDefault(require("./Expenses"));
+class Reports extends ClockifyApi_1.default {
+    constructor(apiKey, workspaceId) {
+        super(apiKey);
+        this.workspaceId = workspaceId;
     }
-    Object.defineProperty(Reports.prototype, "summary", {
-        get: function () {
-            return new Summary(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Reports.prototype, "detailed", {
-        get: function () {
-            return new Detailed(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Reports.prototype, "expenses", {
-        get: function () {
-            return new Expenses(this._apiKey, this.workspaceId);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return Reports;
-}(ClockifyAPI));
-export default Reports;
+    get summary() {
+        return new Summary_1.default(this._apiKey, this.workspaceId);
+    }
+    get detailed() {
+        return new Detailed_1.default(this._apiKey, this.workspaceId);
+    }
+    get expenses() {
+        return new Expenses_1.default(this._apiKey, this.workspaceId);
+    }
+}
+exports.default = Reports;
 //# sourceMappingURL=index.js.map
